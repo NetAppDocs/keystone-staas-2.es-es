@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: concepts/pricing.html 
+keywords: pricing, billing introduction, Keystone billing 
+summary: Keystone ofrece un modelo de pago según su crecimiento para sus necesidades de consumo flexibles y escalables. 
+---
+= Precios de Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+El servicio de suscripción de pago por uso NetApp Keystone STaaS ofrece un consumo flexible y escalable con precios predecibles y por adelantado para sus necesidades de almacenamiento.
+
+Keystone le ofrece las siguientes facilidades de facturación:
+
+* Puede pagar en función de la capacidad comprometida de IOPS y latencia para satisfacer diversas necesidades de carga de trabajo.  Los diferentes niveles de servicio de rendimiento (Extreme, Premium, Performance, Standard, Value y Object) le permiten administrar su almacenamiento en función del nivel de servicio adquirido.
+* Presenta una facturación predecible para la capacidad comprometida y un pago por uso para el uso de la capacidad variable (ráfaga).
+* Puede seleccionar un precio de paquete para hardware, sistema operativo central y soporte por un precio de $/TiB.  Tienes una única factura para cada tipo de almacenamiento, archivo, bloque, objeto o servicio de almacenamiento en la nube.
+* Puede seleccionar un plazo flexible para los servicios y opciones de pago, como mensual, trimestral o anual.
+
+
+La facturación de Keystone se basa en la capacidad comprometida y el consumo en ráfagas variables.
+
+Para obtener información sobre las diferentes capacidades admitidas en Keystone, consultelink:../concepts/supported-storage-capacity.html["Capacidades de almacenamiento admitidas en Keystone"] .
+
+*Información relacionada*
+
+* link:../concepts/committed-capacity-billing.html["Facturación basada en capacidad comprometida"]
+* link:../concepts/consumed-capacity-billing.html["Medición basada en la capacidad consumida"]
+* link:../concepts/burst-consumption-billing.html["Facturación basada en consumo explosivo"]
+* link:../concepts/misc-volume-billing.html["Facturación basada en diversos tipos de volumen"]
+* link:../concepts/billing-schedules.html["Horarios de facturación"]
+

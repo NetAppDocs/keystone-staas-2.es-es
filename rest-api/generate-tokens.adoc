@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: rest-api/generate-tokens.html 
+keywords: Refresh token, Digital Advisor portal,access 
+summary: Genere un token de actualización para adquirir nuevos tokens de acceso.  Autentica las solicitudes de API y permanece válido durante una semana o hasta que se reemplace.  Puede obtener el token de acceso a través de la consola o una llamada API. 
+---
+= Generar tokens de actualización y acceso
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un token de actualización se utiliza para obtener programáticamente un nuevo conjunto de tokens de acceso y es válido durante una semana o hasta que se haya utilizado para obtener un nuevo conjunto de tokens.
+
+Los pasos para generar un token de actualización mediante el portal Digital Advisor son los siguientes:
+
+. Iniciar sesión en el https://aiq.netapp.com/api["Portal del Digital Advisor"] utilizando las credenciales de NetApp y seleccione *Generar tokens*.
++
+image:rest-api-aiq-portal.png["Pasos para generar un token de actualización mediante el portal Digital Advisor"]
+
++
+
+NOTE: Para usuarios nuevos, si la opción *Generar tokens* no está disponible, seleccione *Registrarse* para enviar una solicitud de autorización.  Llene el formulario de registro para habilitar la funcionalidad.
+
+. El sistema genera un token de acceso y un token de actualización.  Guarde el token de actualización en una plataforma confiable.
++
+
+NOTE: El portal te ofrece múltiples formas de guardar uno o ambos tokens del conjunto.  Puede copiarlos al portapapeles, descargarlos como archivo de texto o verlos como texto sin formato.
+
++
+image:rest-api-token-types.png["Tipos de tokens"]
+
+
+
+
+
+== Generar token de acceso utilizando la API REST de Digital Advisor
+
+El token de acceso se utiliza para autenticar las solicitudes de API de Digital Advisor .  Se puede generar directamente a través de la consola junto con el token de actualización o utilizando la siguiente llamada API:
+
+*Pedido:*
+
+[cols="41%,59%"]
+|===
+
+
+| *Método* | CORREO 
+
+
+| *Punto final* | `https://api.activeiq.netapp.com/v1/tokens/accessToken` 
+
+
+| *Encabezados*  a| 
+* aceptar: aplicación/json
+* Tipo de contenido: aplicación/json
+
+
+
+
+| *Cuerpo de la solicitud*  a| 
+{ "refresh_token": "<token-de-actualización>" }
+
+|===
+
+NOTE: Debe tener privilegios administrativos para que Digital Advisor pueda acceder a este punto final.
+
+*Respuesta:*
+
+La API devuelve un token de acceso y un token de actualización en formato JSON como respuesta.
+
+[listing]
+----
+{
+"refresh_token": "string",
+"access_token": "string"
+}
+----
+*Código de estado*: 200 – Solicitud exitosa
+
+*Ejemplo de rizo*:
+
+[source, curl]
+----
+curl -X 'POST' \ 'https://api.activeiq.netapp.com/v1/tokens/accessToken' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d ' { "refresh_token": "<refresh-token>" }'
+----
+
+
+== Ejecutar la llamada API
+
+Tras la generación exitosa de un token de acceso, se pueden ejecutar llamadas API autorizadas de Digital Advisor para obtener la información requerida.

@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-bluexp.html 
+keywords: Keystone, BlueXP, Keystone dashboard, overview, subscription manage, monitor 
+summary: Como suscriptor de NetApp Keystone STaaS, puede obtener una descripción general de sus suscripciones de NetApp BlueXP. 
+---
+= Panel de control de Keystone en BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede utilizar la pestaña *Descripción general* para determinar rápidamente las cargas de trabajo en riesgo, ver la capacidad y el estado de vencimiento de las suscripciones, identificar las alertas no resueltas y ver las suscripciones con la mayor utilización de la capacidad.  También puede ver el estado de sus suscripciones en diferentes versiones de Keystone, resaltando cualquier problema que requiera su atención.
+
+Para ver la pestaña *Descripción general*, desde el menú de navegación izquierdo de BlueXP , vaya a *Almacenamiento > Keystone > Descripción general*.
+
+image:bxp-dashboard-overview-1.png["una captura de pantalla de la pestaña Descripción general"]
+
+La pestaña *Descripción general* ofrece la siguiente información:
+
+* *Resumen*: Muestra la cantidad total de suscripciones, clústeres ONTAP , nodos StorageGRID y nodos ONTAP .  Cada categoría tiene un botón *Ver* para navegar fácilmente a las secciones detalladas en la pestaña *Suscripciones* o *Activos*.
+* *Vencerá pronto*: La cantidad de suscripciones que vencen dentro de los próximos 6 meses.  Haga clic en *Ver* para ver estas suscripciones en la pestaña *Suscripciones*.
+* *Solicitudes abiertas*: El número total de solicitudes de servicio abiertas.
+* *Uso de capacidad*: el estado de consumo de capacidad para las suscripciones que están por encima del límite, que utilizan el límite y que están subutilizadas.  Cada categoría incluye un botón *Ver* para navegar a la pestaña *Suscripciones* con los filtros relevantes aplicados.
+* *Las 5 suscripciones principales con el mayor uso de capacidad*: muestra una tabla de las cinco suscripciones principales de Keystone con el mayor porcentaje de uso de capacidad.  Puede hacer clic en el número de suscripción en la columna *Suscripción* para obtener información detallada.
+
+
+*Información relacionada*
+
+* link:../integrations/dashboard-overview.html["Obtenga más información sobre el panel de control de Keystone"]
+* link:../integrations/dashboard-access.html["Comience a utilizar el panel de control de Keystone"]
+* link:..//integrations/keystone-aiq.html["Panel de control de Keystone en Digital Advisor"]
+* link:../integrations/subscriptions-tab.html["Ver los detalles de su suscripción"]
+* link:../integrations/current-usage-tab.html["Ver detalles de su consumo actual"]
+* link:../integrations/consumption-tab.html["Ver tendencias de consumo"]
+

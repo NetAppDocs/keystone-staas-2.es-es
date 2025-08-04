@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: subscription-services-v1.html 
+keywords: Keystone Flex Subscriptions, kfs v1, keystone legacy, Keystone subscription services version 1 
+summary: Servicios de suscripción Keystone STaaS sobre Keystone Flex 
+---
+= Servicios de suscripción de Keystone | Versión 1
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Keystone STaaS fue precedido por los servicios de suscripción de Keystone (anteriormente conocidos como servicios de suscripción Keystone Flex).
+
+Si bien la navegación de las dos ofertas es similar en ellink:./integrations/keystone-bluexp.html["Panel de control de Keystone"^] Los servicios de suscripción de Keystone se diferencian de Keystone STaaS en los niveles de servicio de rendimiento de los componentes, la oferta de servicios y los principios de facturación.  A partir de abril de 2024, NetApp mantiene y publica documentación únicamente para Keystone STaaS.  Si aún utiliza los servicios de suscripción de Keystone , comuníquese con su KSM para obtener ayuda para migrar a Keystone STaaS.  Si es necesario, puede acceder a una versión PDF de la documentación de los servicios de suscripción de Keystone aquí:
+
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide.pdf["Inglés"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ja-jp.pdf["japonés"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-ko-kr.pdf["coreano"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-zh-cn.pdf["Chino (simplificado)"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-zh-tw.pdf["Chino (tradicional)"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-de-de.pdf["Alemán"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-es-es.pdf["Español"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-fr-fr.pdf["Francés"^]
+* https://docs.netapp.com/a/keystone/1.0/keystone-subscription-services-guide-it-it.pdf["italiano"^]
+

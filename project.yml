@@ -1,0 +1,206 @@
+---
+settings:
+  name: Keystone
+  downlevel: true
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  versions:
+  - version-number: '2.0'
+    url: "/keystone-staas-2"
+  - version-number: '3.0'
+    url: "/keystone-staas"
+  langs: es-es,us-en,de-de,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
+sidebar:
+  entries:
+  - title: Documentos de Keystone
+    url: "/index.html"
+  - title: Notas de la versión
+    entries:
+    - title: Novedades en Keystone STaaS
+      url: "/whats-new.html"
+    - title: Problemas solucionados
+      url: "/release-notes/fixed-issues.html"
+    - title: Problemas conocidos
+      url: "/release-notes/known-issues.html"
+    - title: Limitaciones conocidas
+      url: "/release-notes/known-limitations.html"
+  - title: Empezar
+    entries:
+    - title: Obtenga más información sobre Keystone STaaS
+      url: "/concepts/overview.html"
+    - title: Infraestructura Keystone
+      url: "/concepts/infra.html"
+    - title: Coleccionista de Keystone
+      url: "/installation/installation-overview.html"
+    - title: Componentes
+      url: "/concepts/components.html"
+    - title: Flujo de datos
+      url: "/concepts/data-flow.html"
+    - title: Modelos operativos
+      url: "/concepts/operational-models.html"
+  - title: Configurar y configurar Keystone
+    entries:
+    - title: Requisitos
+      entries:
+      - title: Infraestructura virtual
+        url: "/installation/vapp-prereqs.html"
+      - title: Linux
+        url: "/installation/linux-prereqs.html"
+      - title: ONTAP y StorageGRID
+        url: "/installation/addl-req.html"
+    - title: Instalar Keystone Collector
+      entries:
+      - title: Implementar en VMware vSphere
+        url: "/installation/vapp-installation.html"
+      - title: Instalar en Linux
+        url: "/installation/linux-installation.html"
+      - title: Validación automática del software Keystone
+        url: "/installation/validation.html"
+    - title: Configurar Keystone Collector
+      url: "/installation/configuration.html"
+    - title: Instalar ITOM Collector
+      entries:
+      - title: Prepárese para la instalación
+        url: "/installation/itom-prereqs.html"
+      - title: Instalar en Linux
+        url: "/installation/install-itom-linux.html"
+      - title: Instalar en Windows
+        url: "/installation/install-itom-windows.html"
+    - title: Configurar AutoSupport
+      url: "/installation/asup-config.html"
+    - title: Monitorizar y actualizar
+      entries:
+      - title: Supervisar el estado del recopilador Keystone
+        url: "/installation/monitor-health.html"
+      - title: Mejora del colector de Keystone
+        url: "/installation/upgrade.html"
+    - title: Seguridad de Keystone Collector
+      url: "/installation/security.html"
+    - title: Datos recopilados para facturación
+      url: "/installation/data-collection.html"
+    - title: Keystone en modo privado
+      entries:
+      - title: Descripción general
+        url: "/dark-sites/overview.html"
+      - title: Prepárese para la instalación
+        url: "/dark-sites/requirements.html"
+      - title: Instalar Keystone Collector
+        url: "/dark-sites/install-collector.html"
+      - title: Configurar Keystone Collector
+        url: "/dark-sites/configure-collector.html"
+      - title: Supervisar el estado del recopilador Keystone
+        url: "/dark-sites/monitor.html"
+  - title: Administrar y supervisar las suscripciones de Keystone
+    entries:
+    - title: Comprender el panel de control de Keystone
+      entries:
+      - title: Obtenga más información sobre el panel de control de Keystone
+        url: "/integrations/dashboard-overview.html"
+      - title: Comience a utilizar el panel de control de Keystone
+        url: "/integrations/dashboard-access.html"
+      - title: Panel de control de Keystone en BlueXP
+        url: "/integrations/keystone-bluexp.html"
+      - title: Panel de control de Keystone en Digital Advisor
+        url: "/integrations/keystone-aiq.html"
+      - title: Busque datos, genere informes y vea alertas
+        url: "/integrations/options.html"
+    - title: Ver información de suscripciones
+      entries:
+      - title: Ver los detalles de su suscripción
+        url: "/integrations/subscriptions-tab.html"
+      - title: Ver detalles de su consumo actual
+        url: "/integrations/current-usage-tab.html"
+      - title: Ver tendencias de consumo
+        url: "/integrations/consumption-tab.html"
+      - title: Ver el cronograma de su suscripción
+        url: "/integrations/subscription-timeline.html"
+    - title: Ver activos
+      entries:
+      - title: Ver activos asociados a una suscripción
+        url: "/integrations/assets-tab.html"
+      - title: Ver activos en múltiples suscripciones
+        url: "/integrations/assets.html"
+    - title: Modificar sus suscripciones
+      url: "/integrations/modify-subscription.html"
+    - title: Ver su solicitud de servicio
+      url: "/integrations/administration-tab.html"
+    - title: Ver volúmenes y detalles de almacenamiento de objetos
+      url: "/integrations/volumes-objects-tab.html"
+    - title: Ver métricas de rendimiento
+      url: "/integrations/performance-tab.html"
+  - title: Conceptos
+    entries:
+    - title: Servicios STaaS de Keystone
+      entries:
+      - title: Métricas y definiciones
+        url: "/concepts/metrics.html"
+      - title: Calidad del servicio de almacenamiento
+        url: "/concepts/qos.html"
+      - title: Almacenamiento compatible
+        url: "/concepts/supported-storage-services.html"
+      - title: Capacidad soportada
+        url: "/concepts/supported-storage-capacity.html"
+      - title: Niveles de servicio de rendimiento
+        url: "/concepts/service-levels.html"
+      - title: Requisitos de capacidad para los niveles de servicio de rendimiento
+        url: "/concepts/capacity-requirements.html"
+    - title: Servicios complementarios
+      entries:
+      - title: Protección avanzada de datos
+        url: "/concepts/adp.html"
+      - title: Data Infrastructure Insights
+        url: "/concepts/data-infra-insights.html"
+      - title: Nivelación de datos
+        url: "/concepts/data-tiering.html"
+      - title: Componentes no retornables, no volátiles y conformidad con SnapLock
+        url: "/concepts/nrnvc.html"
+      - title: Soporte protegido de EE. UU. (USPS)
+        url: "/concepts/usps.html"
+    - title: Nivel de nivel de servicio de Keystone STaaS
+      entries:
+      - title: Disponibilidad
+        url: "/concepts/sla-availability.html"
+      - title: Actuación
+        url: "/concepts/sla-performance.html"
+      - title: Sostenibilidad
+        url: "/concepts/sla-sustainability.html"
+      - title: Garantía de recuperación de ransomware
+        url: "/concepts/sla-ransomware.html"
+    - title: Facturación
+      entries:
+      - title: Precios de Keystone
+        url: "/concepts/pricing.html"
+      - title: Facturación basada en capacidad comprometida
+        url: "/concepts/committed-capacity-billing.html"
+      - title: Medición basada en la capacidad consumida
+        url: "/concepts/consumed-capacity-billing.html"
+      - title: Facturación basada en consumo explosivo
+        url: "/concepts/burst-consumption-billing.html"
+      - title: Escenarios diversos para la facturación de Keystone
+        url: "/concepts/misc-volume-billing.html"
+      - title: Horarios de facturación
+        url: "/concepts/billing-schedules.html"
+  - title: Acceda a Keystone desde la API REST de Digital Advisor
+    entries:
+    - title: Comience a utilizar la API REST de Digital Advisor para recuperar datos
+        de Keystone
+      url: "/rest-api/retrieve-keystone-data-with-digital-advisor-rest-api.html"
+    - title: Generar tokens de actualización y acceso
+      url: "/rest-api/generate-tokens.html"
+    - title: Obtenga una lista de todos los clientes que utilizan la API REST de Digital
+        Advisor
+      url: "/rest-api/get-customer-list.html"
+    - title: Obtenga suscripciones de clientes utilizando la API REST de Digital Advisor
+      url: "/rest-api/get-customer-subscriptions.html"
+    - title: Obtenga detalles del consumo del cliente utilizando la API REST de Digital
+        Advisor
+      url: "/rest-api/get-customer-consumption.html"
+  - title: Servicios de suscripción de Keystone versión 1
+    url: "/subscription-services-v1.html"
+  - title: Obtenga ayuda con Keystone
+    url: "/concepts/gssc.html"
+  - title: Avisos legales
+    url: "/legal-notices.html"

@@ -1,0 +1,77 @@
+---
+sidebar: sidebar 
+permalink: concepts/misc-volume-billing.html 
+keywords: Billing and miscellaneous scenarios 
+summary: Obtenga información sobre la facturación de Keystone para configuraciones específicas, incluidos volúmenes clonados, protección de datos avanzada y más. 
+---
+= Escenarios diversos para la facturación de Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Comprender la facturación de Keystone para configuraciones específicas puede ayudarlo a optimizar el uso del servicio y administrar los costos.  Las configuraciones incluyen volúmenes clonados, protección de datos avanzada, volúmenes temporales, políticas de QoS, destinos SnapMirror , LUN y volúmenes de sistema/raíz.
+
+
+
+== Facturación de volúmenes clonados
+
+Si los volúmenes se clonan en ONTAP y los utiliza para realizar copias de seguridad y restaurar sus datos, puede seguir usando los clones sin realizar pagos adicionales.  Sin embargo, los volúmenes clonados utilizados para cualquier otro propósito en su negocio durante un período prolongado se cobran.
+
+Tenga en cuenta lo siguiente:
+
+* Los volúmenes clonados no tienen costo siempre que su tamaño sea menor al 10 % del volumen principal (la capacidad física utilizada en el volumen clonado en comparación con la capacidad física utilizada en el volumen principal).
+* No hay un período de gracia de 24 horas para los volúmenes clonados.  Sólo se considera el tamaño del clon.
+* Una vez que el volumen del clon excede el 10 % del tamaño físico del padre, el clon se factura como un volumen estándar (capacidad lógica utilizada).
+
+
+
+
+== Facturación para protección avanzada de datos
+
+La protección de datos avanzada utiliza NetApp MetroCluster para reflejar datos entre dos clústeres separados físicamente.  Para los agregados reflejados de MetroCluster , los datos se escriben dos veces, una en cada clúster.  El servicio Keystone cobra el consumo de cada lado de forma independiente, lo que da como resultado dos registros de consumo idénticos.  Los cargos adicionales se aplican a todas las capacidades de la suscripción, independientemente de si los datos están en la fuente o son datos reflejados o no.
+
+Si supervisa sus clústeres a través de ONTAP System Manager (System Manager) o Active IQ Unified Manager (Unified Manager), es posible que observe una discrepancia entre el consumo informado en estas herramientas y Keystone.  System Manager y Unified Manager no informan los volúmenes en el clúster reflejado (remoto) y, al hacerlo, informan la mitad de las métricas de consumo que informa el servicio Keystone .
+
+.Ejemplo:
+El sitio A y el sitio B están configurados en una configuración MetroCluster .  Cuando un usuario crea un volumen de 10 TB en el sitio A, se crea un volumen idéntico de 10 TB en el sitio B. Keystone identifica 10 TB de consumo en cada sitio, para un aumento total de 20 TB.  El administrador del sistema y el administrador unificado informan que se creó un volumen de 10 TB en el sitio A, pero no informan que se creó un volumen de 10 TB en el sitio B.
+
+Además, todos los volúmenes creados en un sistema Keystone con protección de datos avanzada se contarán para el consumo de protección de datos avanzada, independientemente de si esos volúmenes estén reflejados o no.
+
+
+
+== Facturación de volúmenes temporales
+
+Ocasionalmente, ONTAP crea volúmenes temporales (TMP) al mover volúmenes.  Estos volúmenes temporales son de corta duración y el consumo de estos volúmenes no se mide para la facturación.
+
+
+
+== Políticas de facturación y QoS adaptativas
+
+Keystone mide el consumo en función de los niveles de servicio.  Cada nivel de servicio está asociado con una política de calidad de servicio (QoS) adaptativa específica.  Durante la implementación, se le informará de los detalles de cada política de QoS adaptativa para sus servicios Keystone suscritos.  Durante las operaciones de administración de almacenamiento, asegúrese de que sus volúmenes tengan las políticas de QoS adaptativas adecuadas asignadas según sus niveles de servicio suscritos para evitar una facturación inesperada.  Para obtener más información sobre las políticas de QoS adaptativas en ONTAP, consultelink:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Garantizar el rendimiento con una descripción general de QoS"^] .
+
+
+
+== Facturación para destinos de SnapMirror
+
+El precio del volumen de destino SnapMirror se rige por la política de QoS adaptativa para el nivel de servicio asignado en la fuente.  Sin embargo, si la fuente no tiene una política de QoS adaptativa asociada, el destino se factura según el nivel de servicio más bajo disponible.
+
+
+
+== Facturación de LUN
+
+Para los LUN, se sigue el mismo patrón de facturación que para los volúmenes que se rigen por políticas de QoS adaptativas.  Si se establecen políticas de QoS adaptativas independientes en los LUN, entonces:
+
+* El tamaño del LUN se contabiliza para el consumo de acuerdo con el nivel de servicio asociado de ese LUN.
+* El espacio restante en el volumen, si lo hay, se factura según la política de QoS adaptativa del nivel de servicio establecido en el volumen.
+
+
+
+
+== Volúmenes del sistema y raíz
+
+Los volúmenes del sistema y de la raíz se monitorean como parte del monitoreo general del servicio Keystone , pero no se contabilizan ni se facturan.  El consumo de estos volúmenes está exento de facturación.

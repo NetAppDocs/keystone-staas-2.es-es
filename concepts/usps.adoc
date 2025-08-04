@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: concepts/usps.html 
+keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
+summary: United States Protected Support es un servicio complementario que brinda entrega y soporte de servicios continuos de Keystone para ciudadanos estadounidenses en suelo estadounidense. 
+---
+= Obtenga más información sobre USPS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+United States Protected Support (USPS) es una oferta complementaria para las suscripciones de NetApp Keystone .  Le da derecho a recibir la entrega y el soporte de servicios continuos de Keystone por parte de ciudadanos estadounidenses en suelo estadounidense.
+
+Lea las siguientes secciones para comprender qué elementos de sus suscripciones están sujetos a este servicio complementario y se proporcionan según los términos del Acuerdo NetApp Keystone :disclaimer1[Los servicios y ofertas que se describen aquí están sujetos a, limitados y regidos por, un Acuerdo Keystone completamente ejecutado.]
+
+
+
+== Monitoreo USPS de NetApp
+
+El equipo de soporte de NetApp USPS Keystone supervisa el estado de sus productos y servicios suscritos, brinda soporte remoto y colabora con su gerente de éxito de Keystone .  Todo el personal que supervisa los productos asociados con los pedidos de suscripción de Keystone pertinentes son ciudadanos estadounidenses que operan en suelo estadounidense.
+
+
+
+== Gerente de éxito de Keystone
+
+Keystone Success Manager (KSM) es un ciudadano estadounidense que opera en suelo estadounidense.  Sus responsabilidades están especificadas en su Acuerdo NetApp Keystone .
+
+
+
+== Actividades de despliegue
+
+Cuando sea posible, las actividades de implementación e instalación en el sitio y de forma remota serán realizadas por ciudadanos estadounidenses en territorio estadounidense. nota al pie:descargo de responsabilidad[La disponibilidad de personal adecuado para las actividades en el sitio depende de la ubicación geográfica en la que se implementan los sistemas Keystone ].
+
+
+
+== Soporte
+
+Cuando sea posible, las actividades de soporte y resolución de problemas necesarias en el sitio las realizan ciudadanos estadounidenses en territorio estadounidense. footnote:disclaimer[]

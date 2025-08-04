@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-tiering.html 
+keywords: add-on services, add-on, data tiering 
+summary: El servicio complementario de niveles de datos identifica los datos utilizados con menos frecuencia y los clasifica en niveles de almacenamiento compatibles. 
+---
+= Obtenga más información sobre la clasificación de datos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los servicios estándar de Keystone STaaS para almacenamiento de archivos y bloques incluyen capacidades de niveles que identifican datos utilizados con menor frecuencia y los organizan en niveles en el almacenamiento en frío de NetApp compatible con Keystone STaaS.  Puede utilizar la clasificación de datos como un servicio complementario si desea clasificar sus datos fríos en cualquier almacenamiento compatible con Keystone STaaS que no sea NetApp .
+
+Para obtener información sobre los servicios estándar y complementarios, consultelink:../concepts/supported-storage-services.html["Servicios STaaS de Keystone"] .  Para obtener información sobre los niveles de servicio de rendimiento, consultelink:../concepts/service-levels.html["Niveles de servicio de rendimiento en Keystone"] .
+
+El servicio complementario de niveles solo se requiere cuando los datos están organizados en niveles en cualquier almacenamiento que no sea de NetApp , como Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) y otros almacenamientos de objetos de terceros compatibles con S3 y compatibles con Keystone STaaS.
+
+La capacidad de niveles aprovecha la tecnología NetApp FabricPool que permite la clasificación automatizada de datos a los que se accede con poca frecuencia en niveles de almacenamiento de objetos dentro y fuera de las instalaciones.
+
+El servicio de niveles de datos complementarios permite la clasificación desde los niveles Extremo, Premium, Rendimiento, Estándar y Valor hasta un destino de almacenamiento de objetos.  La proporción entre datos calientes y fríos que se deben clasificar no es fija, y cada nivel se mide y factura por separado.
+
+Por ejemplo, si el objetivo para el nivel de almacenamiento en frío es:
+
+* Nivel de valor de Keystone STaaS, nivel de objeto StorageGRID de Keystone STaaS o red SGWS existente (propiedad del cliente): no hay ningún cargo adicional; es parte del servicio estándar.
+* Nube pública (AWS, Azure, Google) o almacenamiento de objetos de terceros compatible con Keystone STaaS: existe un cargo adicional por la capacidad de datos que está escalonada según el destino de almacenamiento en frío.
+
+
+Los cargos por servicios adicionales se aplican durante todo el período de suscripción.
+
+
+NOTE: NetApp no proporciona los servicios de red, almacenamiento y computación basados en hiperescala que requiere Cloud Volumes ONTAP como parte de las suscripciones de Keystone STaaS; estos servicios deben adquirirse directamente de los proveedores de servicios de nube hiperescalar.
+
+*Información relacionada*
+
+link:https://kb.netapp.com/hybrid/Keystone/AIQ_Dashboard/How_to_approximate_Keystone_Consumption_with_Data_Tiering_(FabricPool)_through_the_ONTAP_cli["Cómo aproximar el consumo de Keystone con niveles de datos (FabricPool) mediante la CLI de ONTAP"^]

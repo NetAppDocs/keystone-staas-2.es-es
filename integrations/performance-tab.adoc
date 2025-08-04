@@ -1,0 +1,91 @@
+---
+sidebar: sidebar 
+permalink: integrations/performance-tab.html 
+keywords: keystone-aiq, digital advisor keystone, performance tab 
+summary: Para supervisar el rendimiento de sus sistemas, puede ver las métricas de rendimiento de los volúmenes ONTAP administrados por sus suscripciones de Keystone . 
+---
+= Ver métricas de rendimiento
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para supervisar el rendimiento de sus sistemas, puede ver las métricas de rendimiento de los volúmenes ONTAP administrados por sus suscripciones de Keystone .
+
+
+TIP: Esta pestaña está disponible de forma opcional para usted en Digital Advisor.  Comuníquese con el soporte técnico para ver esta pestaña.  No está disponible en BlueXP.
+
+Para ver esta pestaña en Digital Advisor, siga estos pasos:
+
+.Pasos
+. Haga clic en *General > Suscripciones Keystone > Rendimiento*.
+. Seleccione el número de suscripción.  De forma predeterminada, se selecciona el primer número de suscripción.
+. Seleccione el nombre del volumen requerido de la lista.
++
+Alternativamente, puede hacer clic en elimage:aiq-ks-time-icon.png["icono de gráfico"] icono contra un volumen ONTAP en la pestaña *Volúmenes* para navegar a esta pestaña.
+
+. Seleccione el rango de fechas para la consulta.  El rango de fechas puede ser desde el comienzo del mes o la fecha de inicio de la suscripción hasta la fecha actual o la fecha de finalización de la suscripción.  No puedes seleccionar una fecha futura.
+
+
+Los detalles recuperados se basan en el objetivo de nivel de servicio de rendimiento para cada nivel de servicio de rendimiento.  Por ejemplo, el IOPS máximo, el rendimiento máximo, la latencia objetivo y otras métricas están determinadas por las configuraciones individuales para el nivel de servicio de rendimiento.  Para obtener más información sobre la configuración, consultelink:../concepts/service-levels.html["Niveles de servicio de rendimiento en Keystone"] .
+
+
+NOTE: Si selecciona la casilla de verificación *Línea de referencia de SLO*, los gráficos de IOPS, rendimiento y latencia se representan en función del objetivo de nivel de servicio de rendimiento para el nivel de servicio de rendimiento.  De lo contrario, se muestran en números reales.
+
+Los datos de rendimiento que se muestran en el gráfico horizontal son un promedio en cada intervalo de cinco minutos y están organizados según el rango de fechas de la consulta.  Puede desplazarse por los gráficos y pasar el mouse sobre puntos de datos específicos para profundizar en los datos recopilados.
+
+Puede ver y comparar las métricas de rendimiento en las siguientes secciones según la combinación del número de suscripción, el nombre del volumen y el rango de fechas seleccionado.  Los detalles se muestran según el nivel de servicio de rendimiento asignado al volumen.  Puede ver el nombre del clúster y el tipo de volumen, es decir, los permisos de lectura y escritura asignados al volumen.  También se muestra cualquier mensaje de advertencia asociado con el volumen.
+
+
+
+== IOPS
+
+Esta sección muestra los gráficos de entrada y salida de las cargas de trabajo en el volumen según el rango de fechas de la consulta.  Se muestran las IOPS máximas para el nivel de servicio de rendimiento y las IOPS actuales (en los últimos cinco minutos, no según el rango de fechas de la consulta), junto con las IOPS mínimas, máximas y promedio para el rango de tiempo, en IOPS/Tib.
+
+image:perf-iops.png["Sección IOPS del gráfico"]
+
+
+
+== Rendimiento
+
+Esta sección muestra los gráficos de rendimiento de las cargas de trabajo en el volumen según el rango de fechas de la consulta.  Se muestran el rendimiento máximo para el nivel de servicio de rendimiento (SLO Max) y el rendimiento actual (en los últimos cinco minutos, no según el rango de fechas de la consulta), junto con el rendimiento mínimo, máximo y promedio para el rango de tiempo, en MBps/TiB.
+
+image:perf-thr.png["Gráficos de rendimiento"]
+
+
+
+== Latencia (ms)
+
+Esta sección muestra los gráficos de latencia de las cargas de trabajo en el volumen según el rango de fechas de la consulta.  Se muestran la latencia máxima para el nivel de servicio de rendimiento (objetivo SLO) y la latencia actual (en los últimos cinco minutos, no según el rango de fechas de la consulta), junto con la latencia mínima, máxima y promedio para el rango de tiempo, en milisegundos.
+
+Este gráfico tiene los siguientes colores:
+
+* Azul claro: _Latencia_.  Esta es la latencia real que incluye cualquier latencia que no sea la de su servicio Keystone .  Esto podría incluir latencia adicional, como la latencia que se produce entre su red y su cliente.
+* Azul oscuro: _Latencia efectiva_.  La latencia efectiva es la latencia aplicable únicamente a su servicio Keystone con respecto a su SLA.
+
+
+image:perf-lat.png["gráficos de rendimiento"]
+
+
+
+== Lógico usado (TiB)
+
+Esta sección muestra las capacidades aprovisionadas y utilizadas lógicamente del volumen.  La capacidad lógica utilizada actual (en los últimos cinco minutos, no según el rango de fechas de la consulta), junto con el uso mínimo, máximo y promedio para el rango de tiempo se muestran en TiB.  En este gráfico, el área gris representa la capacidad comprometida y el gráfico amarillo indica el uso lógico.
+
+image:perf-log-usd.png["gráfico de capacidad lógica utilizada"]
+
+*Información relacionada*
+
+* link:../integrations/dashboard-overview.html["Comprender el panel de control de Keystone"]
+* link:../integrations/subscriptions-tab.html["Ver los detalles de su suscripción"]
+* link:../integrations/current-usage-tab.html["Ver detalles de su consumo actual"]
+* link:../integrations/consumption-tab.html["Ver tendencias de consumo"]
+* link:../integrations/subscription-timeline.html["Ver el cronograma de su suscripción"]
+* link:../integrations/assets-tab.html["Ver sus activos de suscripción de Keystone"]
+* link:../integrations/assets.html["Visualiza los activos en todas tus suscripciones de Keystone"]
+* link:../integrations/volumes-objects-tab.html["Ver volúmenes y detalles de objetos"]
+

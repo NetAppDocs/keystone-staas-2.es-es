@@ -1,0 +1,316 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'new features, release notes, enhancements, what"s new' 
+summary: NetApp le ofrece funciones nuevas y mejoradas en cada versión de los servicios Keystone STaaS. 
+---
+= Novedades en Keystone STaaS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Obtenga información sobre las últimas características y mejoras en los servicios Keystone STaaS.
+
+
+
+== 05 de agosto de 2025
+
+
+
+=== Ver datos de consumo a nivel de instancia
+
+Puede ver el consumo actual y los datos históricos de cada instancia de nivel de servicio de rendimiento a través del panel de Keystone en BlueXP.  Esta función está disponible para los niveles de servicio de rendimiento con múltiples instancias, siempre que tenga una suscripción a Keystone versión 3 (v3).  Para obtener más información, consultelink:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["Visualiza el consumo de tus suscripciones de Keystone"] .
+
+
+
+== 30 de junio de 2025
+
+
+
+=== Lanzamiento de Keystone versión 3 (v3)
+
+Ahora puede suscribirse a Keystone versión 3 (v3), la última versión de la oferta NetApp Keystone STaaS.  Esta versión presenta varias mejoras, incluidos niveles de servicio de rendimiento simplificados, opciones de capacidad de ráfaga adicionales y frecuencias de facturación flexibles.  Estas mejoras simplifican la gestión, la optimización y el escalamiento de las soluciones de almacenamiento.  Para obtener más información, consultelink:https://docs.netapp.com/us-en/keystone-staas/concepts/metrics.html["Servicios Keystone STaaS para v3"] .
+
+
+
+== 19 de junio de 2025
+
+
+
+=== Panel de control de Keystone en BlueXP
+
+Ahora puedes acceder al panel de Keystone directamente desde BlueXP.  Esta integración le brinda un único lugar para monitorear, administrar y realizar un seguimiento de todas sus suscripciones de Keystone junto con sus otros servicios de NetApp .
+
+Con el panel de control de Keystone en BlueXP, puedes:
+
+* Vea todos los detalles de su suscripción, el uso de capacidad y los activos en un solo lugar.
+* Administre fácilmente sus suscripciones y solicite cambios a medida que evolucionen sus necesidades.
+* Manténgase actualizado con la información más reciente para su entorno de almacenamiento.
+
+
+Para comenzar, vaya a *Almacenamiento > Keystone* en el menú de navegación izquierdo de BlueXP .  Para obtener más información, consultelink:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Descripción general del panel de control de Keystone"] .
+
+
+
+== 08 de enero de 2025
+
+
+
+=== Adición de opciones de visualización del uso de datos acumulados diariamente
+
+Ahora puede ver el uso de datos acumulados diariamente en formato de gráfico o de tabla para un período de facturación mensual o trimestral haciendo clic en la barra que muestra los datos facturados.  Para obtener más información, consultelink:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Ver el uso de datos acumulado diariamente"] .
+
+
+
+== 12 de diciembre de 2024
+
+
+
+=== Columna lógica usada renombrada
+
+La columna *Usado lógico* en la pestaña *Detalles de volumen* dentro de *Volúmenes y objetos* ahora se llama *Usado lógico de Keystone *.
+
+
+
+=== Pestaña Activos mejorados
+
+La pestaña *Activos* en la pantalla *Suscripciones Keystone * ahora tiene dos nuevas subpestañas: * ONTAP* y * StorageGRID*.  Estas subpestañas ofrecen información detallada a nivel de clúster para ONTAP e información a nivel de red para StorageGRID en función de sus suscripciones.  Para obtener más información, consultelink:./integrations/assets-tab.html["Pestaña Activos"^] .
+
+
+
+=== Nueva opción Ocultar/Mostrar columnas
+
+La pestaña *Detalles del volumen* dentro de *Volúmenes y objetos* ahora incluye una opción *Ocultar/Mostrar columnas*.  Esta opción le permite seleccionar o deseleccionar columnas para personalizar la lista tabular de volúmenes según sus preferencias.  Para obtener más información, consultelink:./integrations/volumes-objects-tab.html["Pestaña Volúmenes y objetos"^] .
+
+
+
+== 21 de noviembre de 2024
+
+
+
+=== Ráfaga acumulada facturada mejorada
+
+Ahora puede ver los datos de uso de ráfagas acumuladas de forma trimestral a través de la opción *Uso de ráfagas acumuladas facturadas* si ha optado por un período de facturación trimestral.  Para obtener más información, consultelink:./integrations/consumption-tab.html#view-accrued-burst["Ver ráfaga acumulada facturada"^] .
+
+
+
+=== Nuevas columnas en la pestaña Detalles de volúmenes
+
+Para mejorar la claridad en el cálculo del uso lógico, se han agregado dos nuevas columnas a la pestaña *Detalles del volumen* dentro de la pestaña *Volúmenes y objetos*:
+
+* *AFS lógico*: muestra la capacidad lógica utilizada por el sistema de archivos activo del volumen.
+* *Instantánea física*: muestra el espacio físico utilizado por las instantáneas.
+
+
+Estas columnas proporcionan mayor claridad en la columna *Lógico utilizado*, que muestra la capacidad lógica combinada utilizada por el sistema de archivos activo del volumen y el espacio físico utilizado por las instantáneas.
+
+
+
+== 11 de noviembre de 2024
+
+
+
+=== Generación de informes mejorada
+
+Ahora puede generar un informe consolidado para ver los detalles de sus datos de Keystone utilizando la función Informe en Digital Advisor.  Para obtener más información, consultelink:./integrations/options.html#generate-consolidated-report-from-digital-advisor["Generar informe consolidado"^] .
+
+
+
+== 10 de julio de 2024
+
+
+
+=== Modificaciones de etiquetas
+
+La etiqueta *Uso actual* se cambia a *Consumo actual* y *Tendencia de capacidad* se cambia a *Tendencia de consumo*.
+
+
+
+=== Barra de búsqueda de suscripciones
+
+El menú desplegable *Suscripciones* en todas las pestañas dentro de la pantalla *Suscripciones Keystone * ahora incluye una barra de búsqueda.  Puede buscar suscripciones específicas enumeradas en el menú desplegable *Suscripciones*.
+
+
+
+== 27 de junio de 2024
+
+
+
+=== Visualización consistente de la suscripción
+
+La pantalla *Suscripciones Keystone * se actualiza para mostrar el número de suscripción seleccionado en todas las pestañas.
+
+* Cuando se actualiza cualquier pestaña dentro de la pantalla *Suscripciones Keystone *, la pantalla navega automáticamente a la pestaña *Suscripciones* y restablece todas las pestañas a la primera suscripción que aparece en el menú desplegable *Suscripción*.
+* Si la suscripción seleccionada no está suscrita a métricas de rendimiento, la pestaña *Rendimiento* mostrará la primera suscripción que aparece en el menú desplegable *Suscripción* al navegar.
+
+
+
+
+== 29 de mayo de 2024
+
+
+
+=== Indicador de ráfaga mejorado
+
+El indicador *Burst* en el índice del gráfico de uso se ha mejorado para mostrar el valor porcentual del límite de ráfaga.  Este valor cambia dependiendo del límite de ráfaga acordado para una suscripción.  También puede ver el valor del límite de ráfaga en la pestaña *Suscripciones* colocando el cursor sobre el indicador *Uso de ráfaga* en la columna *Estado de uso*.
+
+
+
+=== Adición de niveles de servicio
+
+Los niveles de servicio *CVO Primary* y *CVO Secondary* se incluyen para brindar soporte a Cloud Volumes ONTAP para suscripciones que tienen planes de tarifas con capacidad comprometida cero o aquellas configuradas con un clúster metropolitano.
+
+* Puede ver el gráfico de uso de capacidad para estos niveles de servicio desde el panel anterior del widget *Suscripciones Keystone * y la pestaña *Tendencia de capacidad*, y también información de uso detallada desde la pestaña *Uso actual*.
+* En la pestaña *Suscripciones*, estos niveles de servicio se muestran como `CVO (v2)` en la columna *Tipo de uso*, permitiendo la identificación de la facturación de acuerdo a estos niveles de servicio.
+
+
+
+
+=== Función de acercamiento para ráfagas de corta duración
+
+La pestaña *Tendencia de capacidad* ahora incluye una función de acercamiento para ver los detalles de las ráfagas de corto plazo en los gráficos de uso. Para obtener más información, consulte link:./integrations/consumption-tab.html["Pestaña Tendencia de Capacidad"^] .
+
+
+
+=== Visualización mejorada de suscripciones
+
+Se ha mejorado la visualización predeterminada de las suscripciones para ordenarlas por ID de seguimiento.  Las suscripciones en la pestaña *Suscripciones*, incluidas las del menú desplegable *Suscripción* y los informes CSV, ahora se mostrarán según la secuencia alfabética de los ID de seguimiento, siguiendo el orden a, A, b, B, etc.
+
+
+
+=== Visualización mejorada de ráfagas acumuladas
+
+La información sobre herramientas que aparece al pasar el cursor sobre el gráfico de barras de uso de capacidad en la pestaña *Tendencia de capacidad* ahora muestra el tipo de ráfaga acumulada en función de la capacidad comprometida.  Distingue entre ráfagas acumuladas provisionales y facturadas, mostrando *Consumo acumulado provisional* y *Consumo acumulado facturado* para suscripciones con planes de tarifa de capacidad comprometida cero, y *Ráfaga acumulada provisional* y *Ráfaga acumulada facturada* para aquellos con capacidad comprometida distinta de cero.
+
+
+
+== 9 de mayo de 2024
+
+
+
+=== Nuevas columnas en los informes CSV
+
+Los informes CSV de la pestaña *Tendencia de capacidad* ahora incluyen columnas *Número de suscripción* y *Nombre de cuenta* para mejorar los detalles.
+
+
+
+=== Columna de tipo de uso mejorado
+
+La columna *Tipo de uso* dentro de la pestaña *Suscripciones* se mejoró para mostrar los usos lógicos y físicos como valores separados por comas para las suscripciones que cubren los niveles de servicio tanto de archivos como de objetos.
+
+
+
+=== Acceda a los detalles de almacenamiento de objetos desde la pestaña Detalles del volumen
+
+La pestaña *Detalles de volumen* dentro de la pestaña *Volúmenes y objetos* ahora proporciona detalles de almacenamiento de objetos junto con información de volumen para suscripciones que incluyen niveles de servicio tanto para archivos como para objetos.  Puede hacer clic en el botón *Detalles de almacenamiento de objetos* dentro de la pestaña *Detalles de volumen* para ver los detalles.
+
+
+
+== 28 de marzo de 2024
+
+
+
+=== Mejora en la visualización del cumplimiento de la política de QoS en la pestaña Detalles del volumen
+
+La pestaña *Detalles de volumen* dentro de la pestaña *Volúmenes y objetos* ahora proporciona una mejor visibilidad del cumplimiento de la política de Calidad de servicio (QoS).  La columna anteriormente conocida como *AQoS* cambia de nombre a *Compliant*, lo que indica si la política de QoS es conforme.  Además, se agrega una nueva columna *Tipo de política de QoS*, que especifica si la política es fija o adaptativa.  Si no se aplica ninguna de las dos, la columna muestra _No disponible_. Para obtener más información, consulte link:./integrations/volumes-objects-tab.html["Pestaña Volúmenes y objetos"^] .
+
+
+
+=== Nueva columna y visualización simplificada de suscripciones en la pestaña Resumen de volumen
+
+* La pestaña *Resumen de volumen* dentro de la pestaña *Volúmenes y objetos* ahora incluye una nueva columna titulada *Protegido*.  Esta columna proporciona un recuento de los volúmenes protegidos asociados con sus niveles de servicio suscritos.  Si hace clic en el número de volúmenes protegidos, accederá a la pestaña *Detalles del volumen*, donde podrá ver una lista filtrada de volúmenes protegidos.
+* La pestaña *Resumen de volumen* se actualiza para mostrar solo las suscripciones básicas, excluyendo los servicios complementarios. Para obtener más información, consulte link:./integrations/volumes-objects-tab.html["Pestaña Volúmenes y objetos"^] .
+
+
+
+
+=== Cambiar la visualización de detalles de ráfagas acumuladas en la pestaña Tendencia de capacidad
+
+La información sobre herramientas que aparece al pasar el cursor sobre el gráfico de barras de uso de capacidad en la pestaña *Tendencia de capacidad* mostrará los detalles de las ráfagas acumuladas para el mes actual.  Los detalles no estarán disponibles para los meses anteriores.
+
+
+
+=== Acceso mejorado para ver datos históricos de suscripciones de Keystone
+
+Ahora puede ver datos históricos si se modifica o renueva una suscripción de Keystone .  Puede establecer la fecha de inicio de una suscripción a una fecha anterior para ver:
+
+* Datos de consumo y uso acumulado de ráfagas de la pestaña *Tendencia de capacidad*.
+* Métricas de rendimiento de los volúmenes de ONTAP desde la pestaña *Rendimiento*.
+
+
+Los datos se muestran en función de la fecha de inicio seleccionada de la suscripción.
+
+
+
+== 29 de febrero de 2024
+
+
+
+=== Adición de la pestaña Activos
+
+La pantalla *Suscripciones Keystone * ahora incluye la pestaña *Activos*.  Esta nueva pestaña proporciona información a nivel de clúster en función de sus suscripciones. Para obtener más información, consulte link:./integrations/assets-tab.html["Pestaña Activos"^] .
+
+
+
+=== Mejoras en la pestaña Volúmenes y objetos
+
+Para proporcionar mayor claridad a los volúmenes del sistema ONTAP , se han agregado dos nuevos botones de pestaña, *Resumen de volumen* y *Detalles de volumen*, a la pestaña *Volúmenes*.  La pestaña *Resumen de volumen* proporciona un recuento general de los volúmenes asociados con sus niveles de servicio suscritos, incluido su estado de cumplimiento de AQoS e información de capacidad.  La pestaña *Detalles del volumen* enumera todos los volúmenes y sus detalles. Para obtener más información, consulte link:./integrations/volumes-objects-tab.html["Pestaña Volúmenes y objetos"^] .
+
+
+
+=== Experiencia de búsqueda mejorada en Digital Advisor
+
+Los parámetros de búsqueda en la pantalla * Digital Advisor* ahora incluyen números de suscripción de Keystone y listas de seguimiento creadas para suscripciones de Keystone .  Puede ingresar los primeros tres caracteres de un número de suscripción o del nombre de una lista de seguimiento. Para obtener más información, consulte link:./integrations/keystone-aiq.html["Ver el panel de Keystone en Active IQ Digital Advisor"^] .
+
+
+
+=== Ver la marca de tiempo de los datos de consumo
+
+Puedes ver la marca de tiempo de los datos de consumo (en UTC) en el antiguo panel del widget *Suscripciones Keystone *.
+
+
+
+== 13 de febrero de 2024
+
+
+
+=== Capacidad de ver suscripciones vinculadas a una suscripción principal
+
+Algunas de sus suscripciones principales pueden tener suscripciones secundarias vinculadas.  Si ese es el caso, el número de suscripción principal seguirá mostrándose en la columna *Número de suscripción*, mientras que los números de suscripción vinculados aparecerán en una nueva columna *Suscripciones vinculadas* en la pestaña *Suscripciones*.  La columna *Suscripciones vinculadas* estará disponible para usted solo si tiene suscripciones vinculadas, y podrá ver mensajes de información que le notificarán sobre ellas.
+
+
+
+== 11 de enero de 2024
+
+
+
+=== Datos facturados devueltos por ráfaga acumulada
+
+Las etiquetas para *Ráfaga acumulada* ahora se modifican a *Ráfaga acumulada facturada* en la pestaña *Tendencia de capacidad*.  Al seleccionar esta opción podrá ver los gráficos mensuales de los datos de ráfagas acumuladas facturadas. Para obtener más información, consulte link:./integrations/consumption-tab.html#view-accrued-burst["Ver ráfaga acumulada facturada"^] .
+
+
+
+=== Detalles del consumo acumulado para planes de tarifas específicos
+
+Si tiene una suscripción que incluye planes de tarifas con capacidad comprometida _cero_, puede ver los detalles del consumo acumulado en la pestaña *Tendencia de capacidad*.  Al seleccionar la opción *Consumo acumulado facturado*, podrá visualizar los gráficos mensuales de los datos de consumo acumulado facturado.
+
+
+
+== 15 de diciembre de 2023
+
+
+
+=== Capacidad de buscar por listas de seguimiento
+
+El soporte para listas de seguimiento en Digital Advisor se ha ampliado para incluir los sistemas Keystone .  Ahora puedes ver los detalles de las suscripciones de múltiples clientes buscando en listas de seguimiento.  Para obtener más información sobre el uso de listas de seguimiento en Keystone STaaS, consultelink:./integrations/keystone-aiq.html#search-by-keystone-watchlists["Búsqueda por listas de seguimiento de Keystone"^] .
+
+
+
+=== Fecha convertida a la zona horaria UTC
+
+Los datos devueltos en las pestañas de la pantalla *Suscripciones Keystone * de Digital Advisor se muestran en hora UTC (zona horaria del servidor).  Cuando ingresa una fecha para una consulta, automáticamente se considera que está en hora UTC. Para obtener más información, consulte link:./integrations/keystone-aiq.html["Panel de control y generación de informes de suscripciones de Keystone"^] .

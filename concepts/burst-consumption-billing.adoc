@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: concepts/burst-consumption-billing.html 
+keywords: burst consumption billing 
+summary: La facturación de Keystone STaaS se basa en la capacidad máxima, que es la capacidad que usted consume, además de la capacidad comprometida de su suscripción. 
+---
+= Facturación basada en consumo explosivo
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+La facturación de Keystone STaaS se basa en la _capacidad máxima_, que es la capacidad que usted consume, además de la capacidad comprometida de su suscripción.
+
+Su límite de ráfaga se determina y especifica en su acuerdo de Keystone .  Está un 20% por encima de la capacidad comprometida.
+
+La capacidad comprometida es la capacidad comprometida con usted al comprar la suscripción.  La capacidad comprometida y la capacidad de ráfaga se miden por nivel de servicio de rendimiento.  La capacidad consumida es la capacidad que sus cargas de trabajo realmente utilizan.
+
+Cuando la capacidad consumida es mayor que la capacidad comprometida para un nivel de servicio de rendimiento, se registra el consumo repentino y se cobra en consecuencia.  Generalmente es un 20% superior a la capacidad comprometida.  El uso que supera la capacidad de ráfaga se indica como "Por encima del límite de ráfaga".
+
+Este proceso ocurre para cada registro de consumo generado.  Por lo tanto, el consumo repentino es un reflejo tanto de la cantidad como de la duración de sus capacidades consumidas en exceso además de sus capacidades comprometidas.  Para obtener más información, consultelink:../integrations/consumption-tab.html["Vea las tendencias de consumo de sus suscripciones a Keystone"] .
+
+Para obtener información sobre las diferentes capacidades admitidas en Keystone, consultelink:../concepts/supported-storage-capacity.html["Capacidades de almacenamiento admitidas en Keystone"] .

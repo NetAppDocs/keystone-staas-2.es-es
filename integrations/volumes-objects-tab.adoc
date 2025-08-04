@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: integrations/volumes-objects-tab.html 
+keywords: keystone-aiq, digital advisor keystone, volumes-objects-tab, StorageGRID objects details, ONTAP volumes 
+summary: Ver detalles de capacidad a nivel de volumen o de almacenamiento de objetos. 
+---
+= Ver detalles sobre los volúmenes de ONTAP y el almacenamiento de objetos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si desea ver detalles de capacidad a nivel de volumen o de almacenamiento de objetos, puede navegar a la pestaña *Volúmenes y objetos* en Digital Advisor.  Para StorageGRID, puede usar esta pestaña para leer el uso de los nodos individuales en su entorno de almacenamiento de objetos.
+
+Puede consultar la pestaña *Activos* en BlueXP para ver estos detalles.  Para ver los detalles de una suscripción específica de Keystone STaaS, consultelink:../integrations/assets-tab.html["Ver activos asociados con una suscripción de Keystone"] .  Si desea ver detalles de varias suscripciones de Keystone , consultelink:../integrations/assets.html["Visualiza los activos en todas tus suscripciones de Keystone"] .
+
+
+NOTE: El título de esta pestaña varía según la naturaleza de la implementación en su sitio.  Si tiene ONTAP y almacenamiento de objetos, el título de la pestaña aparece como *Volúmenes y objetos*.  Sólo para ONTAP, el nombre aparece como *Volúmenes*.  Para el almacenamiento de objetos StorageGRID , puede consultar la pestaña *Objetos*.
+
+
+
+== Ver volúmenes de ONTAP y detalles de almacenamiento de objetos
+
+La pestaña *Volúmenes y objetos* ofrece información sobre los volúmenes del sistema ONTAP y el almacenamiento de objetos en diferentes niveles de detalle.  Para los volúmenes de ONTAP , hay dos subpestañas: *Resumen de volumen*, que proporciona un recuento general de los volúmenes asignados a los niveles de servicio de rendimiento suscritos, y *Detalles de volumen*, que enumera nuevamente estos volúmenes con sus detalles específicos.  La subpestaña *Objetos* proporciona detalles sobre el almacenamiento de objetos para suscripciones que incluyen niveles de servicio de rendimiento tanto para el almacenamiento de archivos como de objetos.
+
+[role="tabbed-block"]
+====
+.Resumen del volumen
+--
+. Desde el panel de navegación izquierdo de Digital Advisor , vaya a *General > Suscripciones Keystone > Volúmenes y objetos > Resumen de volumen*.
+. Seleccione el número de suscripción.
++
+Para la suscripción de Keystone STaaS seleccionada, puede ver la cantidad total de volúmenes, su estado de cumplimiento de QoS, la cantidad de volúmenes protegidos y la capacidad total comprometida, consumida y disponible en todos esos volúmenes.  Si hace clic en el número de volúmenes no compatibles o protegidos, accederá a la pestaña *Detalles del volumen*, donde podrá ver una lista filtrada que muestra los volúmenes no compatibles o los volúmenes protegidos, según su selección.
+
++
+image:volume-summary-2.png["Pestaña de resumen de volumen"]
+
+
+
+--
+.Detalles del volumen
+--
+. Desde el panel de navegación izquierdo de Digital Advisor , vaya a *General > Suscripciones Keystone > Volúmenes > Detalles del volumen*.
+. Seleccione el número de suscripción.
++
+Puede ver la lista tabular de los volúmenes, como el uso de la capacidad, el tipo de volumen, el clúster, el agregado y los niveles de servicio de rendimiento de Keystone asignados.  Puede desplazarse por las columnas y obtener más información sobre ellas colocando el mouse sobre los íconos de información junto a los encabezados de las columnas.  Puede ordenar por columnas y filtrar las listas para ver información específica.
+
++
+
+NOTE: Las políticas de QoS no son aplicables en Keystone versión 3.
+
++
+Puede utilizar *Ocultar/Mostrar columnas* para agregar o eliminar columnas mostradas en la tabla.  De forma predeterminada, se seleccionan todas las columnas excepto la columna *Departamento*.  Puede seleccionar o deseleccionar cualquier columna, incluida la columna *Departamento*, y sus preferencias se guardarán para su uso posterior.  Al descargar el informe CSV, se incluirán los detalles de la columna *Departamento* si se selecciona, mientras que las demás columnas aparecerán independientemente de su estado de selección en la tabla.
+
++
+
+NOTE: Para el servicio complementario de protección de datos avanzada, aparece una columna adicional para indicar si el volumen es un volumen principal o espejo en la configuración de MetroCluster .  Puede copiar números de serie de nodos individuales haciendo clic en el botón *Copiar números de serie de nodos*.
+
++
+image:volume-details-3.png["Pestaña de detalles de volúmenes"]
+
+
+
+--
+.Objetos
+--
+. Desde el panel de navegación izquierdo de Digital Advisor , vaya a *General > Suscripciones Keystone > Objetos*.
+. Seleccione el número de suscripción.  De forma predeterminada, se selecciona el primer número de suscripción disponible si la suscripción seleccionada anteriormente no incluye niveles de servicio de rendimiento para el almacenamiento de archivos y objetos.
++
+
+NOTE: Para StorageGRID, esta pestaña muestra el uso físico de los nodos para el almacenamiento de objetos.
+
++
+image:objects-details.png["Pestaña Objetos"]
+
+
+
+--
+====
+*Información relacionada*
+
+* link:../integrations/dashboard-overview.html["Comprender el panel de control de Keystone"]
+* link:../integrations/subscriptions-tab.html["Ver los detalles de su suscripción"]
+* link:../integrations/current-usage-tab.html["Ver detalles de su consumo actual"]
+* link:../integrations/consumption-tab.html["Ver tendencias de consumo"]
+* link:../integrations/subscription-timeline.html["Ver el cronograma de su suscripción"]
+* link:../integrations/assets-tab.html["Ver sus activos de suscripción de Keystone"]
+* link:../integrations/assets.html["Visualiza los activos en todas tus suscripciones de Keystone"]
+* link:../integrations/performance-tab.html["Ver métricas de rendimiento"]
+

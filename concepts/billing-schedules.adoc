@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: concepts/billing-schedules.html 
+keywords: billing schedules, schedule for payment 
+summary: Las suscripciones de Keystone STaaS se facturan mensualmente y anualmente. 
+---
+= Horarios de facturación
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las suscripciones de Keystone STaaS se facturan de forma mensual o anual.
+
+
+
+== Facturación mensual
+
+Las facturas se envían mensualmente.  Para el mes en que se utilizan los servicios, se envía una factura el mes siguiente.  Por ejemplo, la factura de los servicios utilizados en enero se entrega a principios de febrero.  Esta factura incluye los cargos por la capacidad comprometida y, si corresponde, cualquier uso excesivo.
+
+
+
+== Facturación anual
+
+Al inicio de cada año de suscripción se genera una factura por el pago mínimo de la capacidad comprometida.  Se genera en la fecha de inicio de la suscripción.  Al final de un trimestre de suscripción se envía otra factura, que suma los cargos aplicables de cualquier uso excesivo acumulado en ese trimestre.  Si la capacidad comprometida se modifica durante una suscripción, se envía una factura el mismo día por los pagos mínimos prorrateados por el resto de ese año de suscripción.  La facturación se calcula a partir del día en el que se hace efectivo el cambio en la capacidad comprometida.

@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-issues.html 
+keywords: netapp, keystone, release notes, known issues 
+summary: Los problemas conocidos identifican problemas que podrían impedirle utilizar los servicios de suscripción de Keystone de manera eficaz. 
+---
+= Problemas conocidos en Keystone STaaS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los problemas conocidos identifican problemas que podrían impedirle utilizar los servicios de suscripción de Keystone de manera eficaz.
+
+Se informan los siguientes problemas conocidos en NetApp Keystone STaaS:
+
+[cols="3*"]
+|===
+| Problema conocido | Descripción | Solución alternativa 
+
+
+ a| 
+Factura incorrecta debido a falta de coincidencia de datos
+ a| 
+Una falta de coincidencia en los datos de consumo de las suscripciones de AutoSupport provoca la generación de facturas incorrectas, lo que causa imprecisiones en la facturación.
+ a| 
+Ninguno
+
+
+
+ a| 
+Visualización incorrecta del tipo de política de QoS
+ a| 
+En la pestaña *Detalles de volumen*, la columna *Tipo de política de QoS* muestra _QoS_ cuando no se aplica ninguna política de QoS, y la columna Cumplimiento muestra _No configurado_, lo que genera una inconsistencia en el estado de la política de QoS que se muestra.
+ a| 
+Ninguno
+
+
+
+ a| 
+Los detalles del volumen no están disponibles para las suscripciones principales y vinculadas
+ a| 
+La pestaña *Resumen de volumen* muestra cero para la cantidad total de volúmenes, el estado de cumplimiento de QoS, la cantidad de volúmenes protegidos y la capacidad total consumida para las suscripciones primarias y secundarias vinculadas.
+ a| 
+Ninguno
+
+|===

@@ -1,0 +1,156 @@
+---
+sidebar: sidebar 
+permalink: installation/configuration.html 
+keywords: configuration keystone collector 
+summary: Configuración completa para permitir que Keystone Collector recopile datos de uso en su entorno de almacenamiento. 
+---
+= Configurar Keystone Collector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Debe completar algunas tareas de configuración para permitir que Keystone Collector recopile datos de uso en su entorno de almacenamiento.  Esta es una actividad única para activar y asociar los componentes necesarios con su entorno de almacenamiento.
+
+[NOTE]
+====
+* Keystone Collector le proporciona la utilidad de interfaz de usuario de terminal (TUI) de administración de Keystone Collector para realizar actividades de configuración y monitoreo.  Puede utilizar varios controles del teclado, como Enter y las teclas de flecha, para seleccionar las opciones y navegar por esta TUI.
+* Keystone Collector se puede configurar para organizaciones que no tienen acceso a Internet, también conocido como _sitio oscuro_ o _modo privado_.  Para obtener más información, consultelink:../dark-sites/overview.html["Keystone en modo privado"] .
+
+
+====
+.Pasos
+. Inicie la utilidad TUI de administración de Keystone Collector:
+`$ keystone-collector-tui`
+. Vaya a **Configurar > KS-Collector** para abrir la pantalla de configuración de Keystone Collector para ver las opciones disponibles para la actualización.
+. Actualice las opciones requeridas.
++
+.Para ONTAP
+[%collapsible]
+====
+** *Recopilar uso de ONTAP *: esta opción habilita la recopilación de datos de uso de ONTAP.  Agregue los detalles del servidor y la cuenta de servicio de Active IQ Unified Manager (Unified Manager).
+** *Recopilar datos de rendimiento de ONTAP *: esta opción habilita la recopilación de datos de rendimiento de ONTAP.  Esta opción está desactivada de forma predeterminada.  Habilite esta opción si se requiere monitoreo del rendimiento en su entorno para fines de SLA.  Proporcione los detalles de la cuenta de usuario de la base de datos de Unified Manager.  Para obtener información sobre la creación de usuarios de bases de datos, consultelink:../installation/addl-req.html["Crear usuarios de Unified Manager"] .
+** *Eliminar datos privados*: esta opción elimina datos privados específicos de los clientes y está habilitada de forma predeterminada.  Para obtener información sobre qué datos se excluyen de las métricas si esta opción está habilitada, consultelink:../installation/configuration.html#limit-collection-of-private-data["Limitar la recopilación de datos privados"] .
+
+
+====
++
+.Para StorageGRID
+[%collapsible]
+====
+** *Recopilar uso de StorageGRID *: esta opción habilita la recopilación de detalles de uso del nodo.  Agregue la dirección del nodo StorageGRID y los detalles del usuario.
+** *Eliminar datos privados*: esta opción elimina datos privados específicos de los clientes y está habilitada de forma predeterminada.  Para obtener información sobre qué datos se excluyen de las métricas si esta opción está habilitada, consultelink:../installation/configuration.html#limit-collection-of-private-data["Limitar la recopilación de datos privados"] .
+
+
+====
+. Activa o desactiva el campo **Iniciar KS-Collector con el sistema**.
+. Haga clic en **Guardar**.image:tui-1.png["pantalla tui"]
+. Asegúrese de que Keystone Collector se encuentre en buen estado volviendo a la pantalla principal de la TUI y verificando la información de **Estado del servicio**.  El sistema debe mostrar que los servicios están en un estado **General: Saludable**.image:tui-2.png["pantalla tui"]
+. Salga de la TUI de administración de Keystone Collector seleccionando la opción **Salir a Shell** en la pantalla de inicio.
+
+
+
+
+== Configurar el proxy HTTP en Keystone Collector
+
+El software Collector admite el uso de un proxy HTTP para comunicarse con Internet.  Esto se puede configurar en la TUI.
+
+.Pasos
+. Reinicie la utilidad TUI de administración de Keystone Collector si ya está cerrada:
+`$ keystone-collector-tui`
+. Active el campo **Proxy HTTP** y agregue los detalles del servidor proxy HTTP, el puerto y las credenciales, si se requiere autenticación.
+. Haga clic en **Guardar**.image:tui-3.png["pantalla tui"]
+
+
+
+
+== Limitar la recopilación de datos privados
+
+Keystone Collector recopila información limitada de configuración, estado y rendimiento necesaria para realizar la medición de suscripciones.  Existe una opción para limitar aún más la información recopilada enmascarando la información confidencial del contenido cargado.  Esto no afecta el cálculo de la facturación.  Sin embargo, limitar la información puede afectar la usabilidad de la información del informe, ya que algunos elementos que los usuarios pueden identificar fácilmente, como el nombre del volumen, se reemplazan con UUID.
+
+Limitar la recopilación de datos específicos de clientes es una opción configurable en la pantalla TUI de Keystone Collector.  Esta opción, *Eliminar datos privados*, está habilitada de forma predeterminada.
+
+image:tui-4.png["pantalla tui"]
+
+Para obtener información sobre los elementos eliminados al limitar el acceso a datos privados tanto en ONTAP como en StorageGRID, consultelink:../installation/data-collection.html["Lista de elementos eliminados al limitar el acceso a datos privados"] .
+
+
+
+== Confíe en una CA raíz personalizada
+
+La verificación de certificados contra una autoridad de certificación raíz pública (CA) es parte de las características de seguridad de Keystone Collector.  Sin embargo, si es necesario, puede configurar Keystone Collector para que confíe en una CA raíz personalizada.
+
+Si utiliza la inspección SSL/TLS en el firewall de su sistema, el tráfico basado en Internet se volverá a cifrar con su certificado CA personalizado.  Es necesario configurar los ajustes para verificar la fuente como una CA confiable antes de aceptar el certificado raíz y permitir que se produzcan conexiones.  Siga estos pasos:
+
+.Pasos
+. Preparar el certificado CA.  Debe estar en formato de archivo _X.509 codificado en base64_.
++
+
+NOTE: Las extensiones de archivo admitidas son `.pem` , `.crt` , `.cert` .  Asegúrese de que el certificado esté en uno de estos formatos.
+
+. Copie el certificado al servidor Keystone Collector.  Tome nota de la ubicación donde se copia el archivo.
+. Abra una terminal en el servidor y ejecute la utilidad de administración TUI.
+`$ keystone-collector-tui`
+. Vaya a *Configuración > Avanzada*.
+. Habilite la opción *Habilitar certificado raíz personalizado*.
+. Para *Seleccionar ruta de certificado raíz personalizado:*, seleccione `- Unset -`
+. Presione Enter.  Se muestra un cuadro de diálogo para seleccionar la ruta del certificado.
+. Seleccione el certificado raíz desde el explorador del sistema de archivos o ingrese la ruta exacta.
+. Presione Enter.  Regresarás a la pantalla *Avanzado*.
+. Seleccione *Guardar*.  Se aplica la configuración.
+
+
+image:kc-custom-ca.png["Pantalla TUI para personalización de CA"]
+
+
+
+== Crear niveles de servicio de rendimiento
+
+Puede crear niveles de servicio de rendimiento (PSL) mediante la utilidad TUI de administración de Keystone Collector.  La creación de PSL a través de TUI selecciona automáticamente los valores predeterminados establecidos para cada nivel de servicio, lo que reduce la posibilidad de errores que pueden ocurrir al configurar manualmente estos valores al crear PSL a través de Active IQ Unified Manager.
+
+Para obtener más información sobre los PSL, consultelink:https://docs.netapp.com/us-en/active-iq-unified-manager/storage-mgmt/concept_manage_performance_service_levels.html["Niveles de servicio de rendimiento"^] .
+
+Para obtener más información sobre los niveles de servicio, consultelink:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Niveles de servicio en Keystone"^] .
+
+.Pasos
+. Inicie la utilidad TUI de administración de Keystone Collector:
+`$ keystone-collector-tui`
+. Vaya a *Configurar>AIQUM* para abrir la pantalla AIQUM.
+. Habilite la opción *Crear perfiles de rendimiento AIQUM*.
+. Ingrese los detalles del servidor y la cuenta de usuario de Active IQ Unified Manager .  Estos detalles son necesarios para crear PSL y no se almacenarán.
++
+image:qos-account-details-1.png["Pantalla TUI para ingresar los detalles del servidor AIQUM y la cuenta de servicio"]
+
+. Para *Seleccionar versión de Keystone *, seleccione `-unset-` .
+. Presione Enter.  Se muestra un cuadro de diálogo para seleccionar la versión de Keystone .
+. Resalte *STaaS* para especificar la versión de Keystone para Keystone STaaS y luego presione Entrar.
++
+image:qos-STaaS-selection-2.png["Pantalla TUI para especificar la versión de Keystone"]
+
++
+
+NOTE: Puede resaltar la opción *KFS* para los servicios de suscripción de Keystone versión 1.  Los servicios de suscripción de Keystone se diferencian de Keystone STaaS en los niveles de servicio constituyentes, las ofertas de servicios y los principios de facturación.  Para obtener más información, consultelink:https://docs.netapp.com/us-en/keystone-staas/subscription-services-v1.html["Servicios de suscripción de Keystone | Versión 1"^] .
+
+. Todos los niveles de servicio de Keystone compatibles se mostrarán dentro de la opción *Seleccionar niveles de servicio de Keystone * para la versión de Keystone especificada.  Habilite los niveles de servicio deseados de la lista.
++
+image:qos-STaaS-selection-3.png["Pantalla TUI para mostrar todos los niveles de servicio Keystone compatibles"]
+
++
+
+NOTE: Puede seleccionar varios niveles de servicio simultáneamente para crear PSL.
+
+. Seleccione *Guardar* y presione Enter.  Se crearán niveles de servicio de rendimiento.
++
+Puede ver los PSL creados, como Premium-KS-STaaS para STaaS o Extreme KFS para KFS, en la página *Niveles de servicio de rendimiento* en Active IQ Unified Manager.  Si los PSL creados no cumplen con sus requisitos, puede modificarlos para satisfacer sus necesidades.  Para obtener más información, consultelink:https://docs.netapp.com/us-en/active-iq-unified-manager/storage-mgmt/task_create_and_edit_psls.html["Creación y edición de niveles de servicio de rendimiento"^] .
+
++
+image:qos-performance-sl.png["Captura de pantalla de la interfaz de usuario para mostrar las políticas de AQoS creadas"]
+
+
+
+
+TIP: Si ya existe una PSL para el nivel de servicio seleccionado en el servidor Active IQ Unified Manager especificado, no podrá crearla nuevamente.  Si intenta hacerlo, recibirá un mensaje de error.image:qos-failed-policy-1.png["Pantalla TUI para mostrar el mensaje de error para la creación de la política"]

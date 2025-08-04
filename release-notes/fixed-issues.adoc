@@ -1,0 +1,292 @@
+---
+sidebar: sidebar 
+permalink: release-notes/fixed-issues.html 
+keywords: fixed issues 
+summary: Los problemas que se encontraron en versiones anteriores de los servicios NetApp Keystone STaaS se han solucionado en versiones posteriores. 
+---
+= Problemas corregidos en Keystone STaaS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los problemas que se encontraron en versiones anteriores de los servicios NetApp Keystone STaaS se han solucionado en versiones posteriores.
+
+[cols="3*"]
+|===
+| Descripción del problema | Después de la corrección | Corregido en la versión 
+
+
+ a| 
+En la pestaña *Activos*, los activos de StorageGRID no son visibles.
+ a| 
+Fijado
+ a| 
+19 de junio de 2025
+
+
+
+ a| 
+Para el nivel de servicio Advance Data-Protect, en la pestaña *Tendencia de consumo*, el gráfico muestra una división para los sitios principales y espejo.
+ a| 
+El gráfico ya no muestra una división entre los sitios principales y los espejo.
+ a| 
+19 de junio de 2025
+
+
+
+ a| 
+Cuando el Keystone Collector existente instalado mediante un paquete Debian intenta configurar un proxy HTTP o habilitar Unified Manager a través de la TUI de administración del Keystone Collector, la TUI deja de responder.
+ a| 
+Fijado
+ a| 
+19 de mayo de 2025
+
+
+
+ a| 
+Keystone Collector para StorageGRID no se puede configurar correctamente debido a que faltan configuraciones comunes.
+ a| 
+Fijado
+ a| 
+12 de mayo de 2025
+
+
+
+ a| 
+Keystone Collector no puede recopilar datos de uso de los clústeres de ONTAP que ejecutan versiones anteriores a 9.11.
+ a| 
+Fijado
+ a| 
+30 de abril de 2025
+
+
+
+ a| 
+Los valores de consumo de las suscripciones vinculadas muestran números negativos incorrectos, lo que provoca que el uso total comprometido se muestre como incorrectamente alto.
+ a| 
+Fijado
+ a| 
+14 de abril de 2025
+
+
+
+ a| 
+No se pueden ver datos históricos en la pestaña *Tendencia de consumo* para los niveles de servicio de algunas suscripciones.
+ a| 
+Fijado
+ a| 
+14 de abril de 2025
+
+
+
+ a| 
+Falta la opción *Suscripciones Keystone * en la *Lista de seguimiento* y la opción *Número de suscripción* en los *Informes* en el panel de control del Digital Advisor .
+ a| 
+Fijado
+ a| 
+19 de marzo de 2025
+
+
+
+ a| 
+Faltan algunas suscripciones de Keystone de la *Lista de seguimiento* después de crear o modificar la lista de seguimiento desde el panel de control de Digital Advisor .
+ a| 
+Fijado
+ a| 
+19 de marzo de 2025
+
+
+
+ a| 
+No se pueden ver datos históricos en la pestaña *Tendencia de consumo* para los niveles de servicio asociados con una suscripción que ha expirado y se ha renovado con el mismo ID de seguimiento pero con diferentes niveles de servicio.
+ a| 
+Fijado
+ a| 
+19 de marzo de 2025
+
+
+
+ a| 
+No se pueden generar informes de suscripciones al seleccionar más de 10 o 12 suscripciones en la pestaña *Suscripciones* de la página *Suscripciones Keystone *.
+ a| 
+Fijado
+ a| 
+8 de enero de 2025
+
+
+
+ a| 
+La subpestaña *Resumen de volumen* en la pestaña *Volúmenes y objetos* no se carga para las suscripciones de StorageGrid.
+ a| 
+Fijado
+ a| 
+21 de noviembre de 2024
+
+
+
+ a| 
+El campo *Fecha de inicio* para seleccionar el rango de fechas muestra una fecha futura de manera predeterminada cuando se navega a la pestaña *Tendencia de consumo*.
+ a| 
+Fijado
+ a| 
+4 de septiembre de 2024
+
+
+
+ a| 
+La TUI de administración de Keystone Collector deja de responder cuando se configuran políticas de AQoS.
+ a| 
+Fijado
+ a| 
+7 de agosto de 2024
+
+
+
+ a| 
+Los gráficos de uso muestran datos más allá del período de un solo día especificado cuando la fecha correspondiente al día actual se selecciona como fecha de inicio y de finalización del mes anterior desde la opción *Tendencia de capacidad* en la pestaña *Tendencias de capacidad*.
+ a| 
+Los gráficos de uso ahora muestran correctamente los datos para el período de un solo día especificado.
+ a| 
+27 de junio de 2024
+
+
+
+ a| 
+Los datos históricos acumulados de ráfagas no están disponibles para los niveles de servicio *CVO primario* y *CVO secundario* dentro de la pestaña *Tendencia de capacidad* para las suscripciones que no están configuradas con una configuración de MetroCluster .
+ a| 
+Fijado
+ a| 
+21 de junio de 2024
+
+
+
+ a| 
+Visualización incorrecta del valor de almacenamiento de objetos consumido que aparece en la pestaña *Detalles del volumen* para las suscripciones de AutoSupport .
+ a| 
+El valor consumido para el almacenamiento de objetos ahora se muestra correctamente.
+ a| 
+21 de junio de 2024
+
+
+
+ a| 
+No se puede ver la información a nivel de clúster dentro de la pestaña *Activos* para las suscripciones de AutoSupport que están configuradas con una configuración MetroCluster .
+ a| 
+Fijado
+ a| 
+21 de junio de 2024
+
+
+
+ a| 
+Ubicación incorrecta de datos de Keystone en informes CSV si la columna *Nombre de cuenta* en los informes CSV, generados desde la pestaña *Tendencia de capacidad*, incluye un nombre de cuenta con una coma `(,)` .
+ a| 
+Los datos de Keystone están alineados correctamente en los informes CSV.
+ a| 
+29 de mayo de 2024
+
+
+
+ a| 
+Muestra el uso acumulado de ráfagas desde la pestaña *Tendencia de capacidad* incluso si el consumo está por debajo de la capacidad comprometida.
+ a| 
+Fijado
+ a| 
+29 de mayo de 2024
+
+
+
+ a| 
+Texto de información sobre herramientas incorrecto para el ícono de índice *Ráfaga actual* en la pestaña *Tendencia de capacidad*.
+ a| 
+Muestra el texto de información sobre herramientas correcto "_La cantidad de capacidad de ráfaga que se está consumiendo actualmente.  Tenga en cuenta que esto es para el período de facturación actual, no para el rango de fechas seleccionado.
+ a| 
+28 de marzo de 2024
+
+
+
+ a| 
+La información sobre los volúmenes no compatibles con AQoS y los socios de MetroCluster no está disponible para las suscripciones de AutoSupport si los datos de Keystone no están presentes durante 24 horas.
+ a| 
+Fijado
+ a| 
+28 de marzo de 2024
+
+
+
+ a| 
+Ocasionalmente, puede haber una discrepancia en la cantidad de volúmenes no compatibles con AQoS que aparecen en las pestañas *Resumen de volumen* y *Detalles de volumen* si hay dos niveles de servicio asignados a un volumen que cumple con la conformidad con AQoS solo para un nivel de servicio.
+ a| 
+Fijado
+ a| 
+28 de marzo de 2024
+
+
+
+ a| 
+No hay información disponible en la pestaña *Activos* para las suscripciones de AutoSupport .
+ a| 
+Fijado
+ a| 
+14 de marzo de 2024
+
+
+
+ a| 
+Si tanto MetroCluster como FabricPool estuvieran habilitados en un entorno donde se pudieran aplicar planes de tarifas tanto para niveles como para almacenamiento de objetos, los niveles de servicio podrían derivarse incorrectamente para los volúmenes reflejados (tanto los volúmenes constituyentes como los de FabricPool ).
+ a| 
+Se aplican niveles de servicio correctos a los volúmenes reflejados.
+ a| 
+29 de febrero de 2024
+
+
+
+ a| 
+En algunas suscripciones que tienen un único nivel de servicio o plan de tarifas, faltaba la columna de cumplimiento de AQoS en la salida CSV de los informes de la pestaña *Volúmenes*.
+ a| 
+La columna de cumplimiento es visible en los informes.
+ a| 
+29 de febrero de 2024
+
+
+
+ a| 
+En algunos entornos de MetroCluster , se detectaron anomalías ocasionales en los gráficos de densidad de IOPS en la pestaña *Rendimiento*.  Esto sucedió debido a una asignación incorrecta de volúmenes a niveles de servicio.
+ a| 
+Los gráficos se muestran correctamente.
+ a| 
+29 de febrero de 2024
+
+
+
+ a| 
+El indicador de uso para un registro de consumo explosivo se mostraba en color ámbar.
+ a| 
+El indicador aparece en rojo.
+ a| 
+13 de diciembre de 2023
+
+
+
+ a| 
+El rango de fechas y los datos en las pestañas Tendencia de capacidad, Uso actual y Rendimiento no se convirtieron a la zona horaria UTC.
+ a| 
+El rango de fechas de la consulta y los datos en todas las pestañas se muestran en hora UTC (zona horaria del servidor).  La zona horaria UTC también se muestra junto a cada campo de fecha en las pestañas.
+ a| 
+13 de diciembre de 2023
+
+
+
+ a| 
+Hubo una discrepancia en la fecha de inicio y la fecha de finalización entre las pestañas y los informes CSV descargados.
+ a| 
+Fijado.
+ a| 
+13 de diciembre de 2023
+
+|===

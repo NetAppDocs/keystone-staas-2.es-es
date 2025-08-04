@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: installation/upgrade.html 
+keywords: Keystone Collector upgrade 
+summary: Actualice manualmente el Keystone Collector si la función de actualización automática estaba deshabilitada. 
+---
+= Actualizar manualmente Keystone Collector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función de actualización automática en Keystone Collector está habilitada de forma predeterminada, lo que actualiza automáticamente el software de Keystone Collector con cada nueva versión.  Sin embargo, puede desactivar esta función y actualizar el software manualmente.
+
+.Pasos
+. Inicie la utilidad TUI de administración de Keystone Collector:
+`$ keystone-collector-tui`
+. En la pantalla de mantenimiento, seleccione la opción *Actualizar recopiladores ahora*.
++
+image:upgrade-1.png["pantalla tui"]
+
++
+Alternativamente, ejecute estos comandos para actualizar la versión:
+
++
+Para CentOS:
+
++
+[listing]
+----
+sudo yum clean metadata && sudo yum install keystone-collector
+----
++
+image:upgrade-2.png["pantalla tui"]
+
++
+Para Debian:
+
++
+[listing]
+----
+sudo apt-get update && sudo apt-get upgrade keystone-collector
+----
+. Reinicie la TUI de administración de Keystone Collector, podrá ver la última versión en la parte superior izquierda de la pantalla de inicio.
++
+Alternativamente, ejecute estos comandos para ver la última versión:
+
++
+Para CentOS:
+
++
+[listing]
+----
+rpm -q keystone-collector
+----
++
+Para Debian:
+
++
+[listing]
+----
+dpkg -l | grep keystone-collector
+----
+
