@@ -35,10 +35,12 @@ Tenga en cuenta lo siguiente:
 
 La protección de datos avanzada utiliza NetApp MetroCluster para reflejar datos entre dos clústeres separados físicamente.  Para los agregados reflejados de MetroCluster , los datos se escriben dos veces, una en cada clúster.  El servicio Keystone cobra el consumo de cada lado de forma independiente, lo que da como resultado dos registros de consumo idénticos.  Los cargos adicionales se aplican a todas las capacidades de la suscripción, independientemente de si los datos están en la fuente o son datos reflejados o no.
 
+Cada sitio de MetroCluster tiene su propia suscripción y facturación.  Para las configuraciones de MetroCluster , la medición de uso tiene en cuenta cómo se utiliza el almacenamiento en ambos sitios.  Si tiene una configuración de MetroCluster con 100 TiB por sitio, solo se utilizan 50 TiB de forma activa en cada sitio y los 50 TiB restantes en cada sitio sirven como copia de seguridad reflejada.  Los cargos adicionales de protección de datos avanzada se calculan en función de estos 100 TiB de uso activo total y se dividen entre ambos sitios a través de sus respectivas suscripciones a 50 TiB cada una.
+
 Si supervisa sus clústeres a través de ONTAP System Manager (System Manager) o Active IQ Unified Manager (Unified Manager), es posible que observe una discrepancia entre el consumo informado en estas herramientas y Keystone.  System Manager y Unified Manager no informan los volúmenes en el clúster reflejado (remoto) y, al hacerlo, informan la mitad de las métricas de consumo que informa el servicio Keystone .
 
 .Ejemplo:
-El sitio A y el sitio B están configurados en una configuración MetroCluster .  Cuando un usuario crea un volumen de 10 TB en el sitio A, se crea un volumen idéntico de 10 TB en el sitio B. Keystone identifica 10 TB de consumo en cada sitio, para un aumento total de 20 TB.  El administrador del sistema y el administrador unificado informan que se creó un volumen de 10 TB en el sitio A, pero no informan que se creó un volumen de 10 TB en el sitio B.
+El sitio A y el sitio B están configurados en una configuración MetroCluster . Cuando un usuario crea un volumen de 10 TB en el sitio A, se crea un volumen idéntico de 10 TB en el sitio B. Keystone identifica 10 TB de consumo en cada sitio, para un aumento total de 20 TB. El administrador del sistema y el administrador unificado informan que se creó un volumen de 10 TB en el sitio A, pero no informan que se creó un volumen de 10 TB en el sitio B.
 
 Además, todos los volúmenes creados en un sistema Keystone con protección de datos avanzada se contarán para el consumo de protección de datos avanzada, independientemente de si esos volúmenes estén reflejados o no.
 

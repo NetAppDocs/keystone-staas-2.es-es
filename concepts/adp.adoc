@@ -25,7 +25,13 @@ El servicio de protección de datos avanzado de Keystone puede reflejar datos de
 
 Para obtener información sobre cómo ver el consumo en una configuración de MetroCluster , consultelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Cuadros de referencia para la protección avanzada de datos"] .
 
-Los cargos adicionales se aplican a todas las capacidades de su suscripción, incluidos los datos de origen, las copias duplicadas y los datos no duplicados.
+
+
+== Entender los precios
+
+El servicio complementario de protección de datos avanzada tiene un precio basado en la capacidad comprometida en cada sitio.  Esto ayuda a determinar el costo real del servicio de protección de datos avanzado en $/TiB. Los cargos adicionales se aplican a todas las capacidades de su suscripción, incluidos los datos de origen, las copias duplicadas y los datos no duplicados.
+
+Para la configuración de MetroCluster , cada sitio requiere su propia suscripción y se le cobra por la capacidad comprometida en cada sitio de forma independiente.  Para obtener más información sobre la facturación, consultelink:../concepts/misc-volume-billing.html#billing-for-advanced-data-protection["Facturación para protección avanzada de datos"] .
 
 Tenga en cuenta lo siguiente:
 

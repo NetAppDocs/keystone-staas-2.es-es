@@ -18,22 +18,23 @@ Los servicios estándar de Keystone STaaS para almacenamiento de archivos y bloq
 
 Para obtener información sobre los servicios estándar y complementarios, consultelink:../concepts/supported-storage-services.html["Servicios STaaS de Keystone"] .  Para obtener información sobre los niveles de servicio de rendimiento, consultelink:../concepts/service-levels.html["Niveles de servicio de rendimiento en Keystone"] .
 
-El servicio complementario de niveles solo se requiere cuando los datos están organizados en niveles en cualquier almacenamiento que no sea de NetApp , como Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) y otros almacenamientos de objetos de terceros compatibles con S3 y compatibles con Keystone STaaS.
+
+NOTE: El servicio complementario de niveles solo se requiere cuando los datos están organizados en niveles en cualquier almacenamiento que no sea de NetApp , como Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) y otros almacenamientos de objetos de terceros compatibles con S3 y compatibles con Keystone STaaS.
 
 La capacidad de niveles aprovecha la tecnología NetApp FabricPool que permite la clasificación automatizada de datos a los que se accede con poca frecuencia en niveles de almacenamiento de objetos dentro y fuera de las instalaciones.
 
-El servicio de niveles de datos complementarios permite la clasificación desde los niveles Extremo, Premium, Rendimiento, Estándar y Valor hasta un destino de almacenamiento de objetos.  La proporción entre datos calientes y fríos que se deben clasificar no es fija, y cada nivel se mide y factura por separado.
+El servicio de niveles de datos complementarios permite la clasificación desde los niveles Extremo, Premium, Rendimiento, Estándar y Valor hasta un destino de almacenamiento de objetos. La proporción de datos calientes y fríos que se deben clasificar no es fija, y cada nivel se mide y factura por separado.
 
 Por ejemplo, si el objetivo para el nivel de almacenamiento en frío es:
 
-* Nivel de valor de Keystone STaaS, nivel de objeto StorageGRID de Keystone STaaS o red SGWS existente (propiedad del cliente): no hay ningún cargo adicional; es parte del servicio estándar.
+* Nivel de valor de Keystone STaaS, nivel de objeto StorageGRID de Keystone STaaS o red StorageGRID Webscale (SGWS) existente (propiedad del cliente): no hay ningún cargo adicional; es parte del servicio estándar.
 * Nube pública (AWS, Azure, Google) o almacenamiento de objetos de terceros compatible con Keystone STaaS: existe un cargo adicional por la capacidad de datos que está escalonada según el destino de almacenamiento en frío.
 
 
 Los cargos por servicios adicionales se aplican durante todo el período de suscripción.
 
 
-NOTE: NetApp no proporciona los servicios de red, almacenamiento y computación basados en hiperescala que requiere Cloud Volumes ONTAP como parte de las suscripciones de Keystone STaaS; estos servicios deben adquirirse directamente de los proveedores de servicios de nube hiperescalar.
+NOTE: NetApp no proporciona los servicios de red, almacenamiento y computación basados en hiperescalador que requiere Cloud Volumes ONTAP como parte de las suscripciones de Keystone STaaS; estos servicios deben adquirirse directamente de los proveedores de servicios de nube de hiperescalador.
 
 *Información relacionada*
 

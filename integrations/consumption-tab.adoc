@@ -187,6 +187,8 @@ Para el nivel de servicio de rendimiento _Advanced Data-Protect_, el gráfico se
 
 image:adp-src-2.png["base primaria mcc"]
 
+El consumo mostrado de 94,21 TiB representa el uso de la suscripción principal.  Dado que la protección de datos avanzada divide el consumo entre sitios asociados con suscripciones separadas, este gráfico muestra solo el uso del sitio principal.  Para conocer los precios del servicio complementario de protección de datos avanzada, consultelink:../concepts/adp.html#understand-pricing["Entender los precios"] .
+
 .Lo que puedes ver para la suscripción secundaria (sitio espejo)
 Al verificar la suscripción secundaria, puede ver que el gráfico de barras para el nivel de servicio de rendimiento _Performance_ (nivel de servicio de rendimiento base) en el mismo punto de recopilación de datos que el sitio del socio está invertido, y la división del consumo en los sitios principal y espejo es 93,38 TiB y 95,04 TiB respectivamente.
 
