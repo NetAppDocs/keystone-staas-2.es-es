@@ -54,7 +54,7 @@ Puede ver la lista tabular de los volúmenes, como el uso de la capacidad, el ti
 NOTE: Las políticas de QoS no son aplicables en Keystone versión 3.
 
 +
-Puede utilizar *Ocultar/Mostrar columnas* para agregar o eliminar columnas mostradas en la tabla.  De forma predeterminada, se seleccionan todas las columnas excepto la columna *Departamento*.  Puede seleccionar o deseleccionar cualquier columna, incluida la columna *Departamento*, y sus preferencias se guardarán para su uso posterior.  Al descargar el informe CSV, se incluirán los detalles de la columna *Departamento* si se selecciona, mientras que las demás columnas aparecerán independientemente de su estado de selección en la tabla.
+Puede utilizar *Ocultar/Mostrar columnas* para agregar o eliminar columnas mostradas en la tabla. De forma predeterminada, la tabla muestra las preferencias de columna guardadas previamente.  Las columnas recientemente agregadas, como las columnas *Departamento* o *Huella total*, están ocultas de manera predeterminada y deben seleccionarse manualmente para que aparezcan en la tabla.  Puede seleccionar o deseleccionar cualquier columna y sus preferencias se guardarán para su uso posterior.  Al descargar el informe CSV, todas las columnas disponibles se incluyen en la exportación, independientemente de sus preferencias de visualización.
 
 +
 
