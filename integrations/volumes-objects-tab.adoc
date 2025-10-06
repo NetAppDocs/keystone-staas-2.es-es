@@ -16,7 +16,7 @@ summary: Ver detalles de capacidad a nivel de volumen o de almacenamiento de obj
 [role="lead"]
 Si desea ver detalles de capacidad a nivel de volumen o de almacenamiento de objetos, puede navegar a la pestaña *Volúmenes y objetos* en Digital Advisor.  Para StorageGRID, puede usar esta pestaña para leer el uso de los nodos individuales en su entorno de almacenamiento de objetos.
 
-Puede consultar la pestaña *Activos* en BlueXP para ver estos detalles.  Para ver los detalles de una suscripción específica de Keystone STaaS, consultelink:../integrations/assets-tab.html["Ver activos asociados con una suscripción de Keystone"] .  Si desea ver detalles de varias suscripciones de Keystone , consultelink:../integrations/assets.html["Visualiza los activos en todas tus suscripciones de Keystone"] .
+Puede consultar la página *Activos* en la consola de NetApp para ver estos detalles. Para ver los detalles de una suscripción específica de Keystone STaaS, consultelink:../integrations/assets-tab.html["Ver activos asociados con una suscripción de Keystone"] . Si desea ver detalles de varias suscripciones de Keystone , consultelink:../integrations/assets.html["Visualiza los activos en todas tus suscripciones de Keystone"] .
 
 
 NOTE: El título de esta pestaña varía según la naturaleza de la implementación en su sitio.  Si tiene ONTAP y almacenamiento de objetos, el título de la pestaña aparece como *Volúmenes y objetos*.  Sólo para ONTAP, el nombre aparece como *Volúmenes*.  Para el almacenamiento de objetos StorageGRID , puede consultar la pestaña *Objetos*.
@@ -37,7 +37,7 @@ La pestaña *Volúmenes y objetos* ofrece información sobre los volúmenes del 
 Para la suscripción de Keystone STaaS seleccionada, puede ver la cantidad total de volúmenes, su estado de cumplimiento de QoS, la cantidad de volúmenes protegidos y la capacidad total comprometida, consumida y disponible en todos esos volúmenes.  Si hace clic en el número de volúmenes no compatibles o protegidos, accederá a la pestaña *Detalles del volumen*, donde podrá ver una lista filtrada que muestra los volúmenes no compatibles o los volúmenes protegidos, según su selección.
 
 +
-image:volume-summary-2.png["Pestaña de resumen de volumen"]
+image:volume-summary-3.png["Pestaña de resumen de volumen"]
 
 
 
@@ -61,7 +61,7 @@ Puede utilizar *Ocultar/Mostrar columnas* para agregar o eliminar columnas mostr
 NOTE: Para el servicio complementario de protección de datos avanzada, aparece una columna adicional para indicar si el volumen es un volumen principal o espejo en la configuración de MetroCluster .  Puede copiar números de serie de nodos individuales haciendo clic en el botón *Copiar números de serie de nodos*.
 
 +
-image:volume-details-3.png["Pestaña de detalles de volúmenes"]
+image:volume-details-4.png["Pestaña de detalles de volúmenes"]
 
 
 
