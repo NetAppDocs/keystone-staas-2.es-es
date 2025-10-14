@@ -78,6 +78,10 @@ La siguiente lista es una muestra representativa de los datos de consumo de capa
 ** Tipo de almacenamiento
 ** Nombre del agregado
 ** UUID agregado
+** Usado Físico
+** Talla disponible
+** Size
+** Tamaño usado
 
 
 * Almacenes de objetos agregados
@@ -174,6 +178,17 @@ La siguiente lista es una muestra representativa de los datos de consumo de capa
 ** VolumeBlocksFootprintBin1
 
 
+* MetroCluster
++
+** Node
+** Agregar
+** LIF
+** Replicación de configuración
+** Conexiones
+** Clústeres
+** Volúmenes
+
+
 * Clústeres MetroCluster
 +
 ** UUID del clúster
@@ -182,6 +197,36 @@ La siguiente lista es una muestra representativa de los datos de consumo de capa
 ** Nombre del clúster remoto
 ** Estado de configuración local
 ** Estado de configuración remota
+
+
+* Nodos de MetroCluster
++
+** Estado de duplicación de DR
+** LIF entre clústeres
+** Accesibilidad del nodo
+** Nodo socio de DR
+** Nodo de socio auxiliar de DR
+** Relación simétrica entre los nodos DR, DR Aux y HA
+** Cambio automático no planificado
+
+
+* Replicación de configuración de MetroCluster
++
+** Latido del corazón remoto
+** Último latido enviado
+** Último latido recibido
+** Transmisión de Vserver
+** Flujo de clúster
+** Almacenamiento
+** Volumen de almacenamiento en uso
+
+
+* Mediadores de MetroCluster
++
+** Dirección del mediador
+** Puerto Mediador
+** Mediador configurado
+** Mediador accesible
 ** Modo
 
 
@@ -243,6 +288,13 @@ La siguiente lista es una muestra representativa de los datos de rendimiento rec
 * Latencia del grupo de políticas de calidad
 * Leer MBps
 * Latencia de QoSSyncSnapmirror
+* Datos a nivel de sistema
++
+** Escritura/Lectura/Otros/Total IOPS
+** Escritura/Lectura/Otros/Rendimiento total
+** Escritura/Lectura/Otro/Latencia total
+
+
 * Escritura de IOPS
 
 
@@ -298,6 +350,11 @@ La siguiente lista es una muestra representativa de la `Physical Data` recopilad
 * Instancia
 * Bytes de utilización del almacenamiento de StorageGRID
 * Metadatos de utilización de almacenamiento de StorageGRID Bytes
+
+
+La siguiente lista es una muestra representativa de la `Availability/Uptime Data` recopilados para StorageGRID:
+
+* Porcentaje de tiempo de actividad del SLA
 
 
 ====

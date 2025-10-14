@@ -50,7 +50,7 @@ TIP: Puede personalizar la tabla utilizando el selector de columnasimage:column-
 . Desde el menú de navegación izquierdo de la consola, seleccione *Almacenamiento > Keystone > Activos*.
 . Seleccione la pestaña *Volúmenes en clústeres*.
 +
-image:console-volumes-clusters-multiple-sub.png["Una captura de pantalla de volúmenes en clústeres para múltiples suscripciones"]
+image:console-volumes-clusters-multiple-sub-1.png["Una captura de pantalla de volúmenes en clústeres para múltiples suscripciones"]
 
 +
 Verá información detallada sobre todos los volúmenes en clústeres en todas las suscripciones de Keystone , incluido el nombre del volumen, el número de suscripción, el número de serie del nodo, el cumplimiento de las políticas de QoS, el nombre del clúster, el nombre del host y los niveles de servicio de rendimiento.  Puede supervisar la capacidad aprovisionada, la utilización lógica y física y los datos fríos.  También obtendrá una descripción general de:
