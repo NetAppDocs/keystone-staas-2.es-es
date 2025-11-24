@@ -103,5 +103,5 @@ La interfaz de usuario (TUI) de Keystone Collector le permite generar paquetes d
 `$ keystone-collector-tui`
 . Vaya a *Solución de problemas > Generar paquete de soporte*.image:tui-sup-bundl.png["pantalla tui"]
 . Cuando se genera, se muestra la ubicación donde se guarda el paquete.  Utilice FTP, SFTP o SCP para conectarse a la ubicación y descargar el archivo de registro a un sistema local.image:tui-sup-bundl-2.png["pantalla tui"]
-. Una vez descargado el archivo, puedes adjuntarlo al ticket de soporte de Keystone ServiceNow.  Para obtener información sobre cómo recaudar tickets, consultelink:../concepts/gssc.html["Generación de solicitudes de servicio"] .
+. Una vez descargado el archivo, puedes adjuntarlo al ticket de soporte de Keystone ServiceNow. Para obtener información sobre cómo recaudar fondos, consulte link:../concepts/support-services.html["Generación de solicitudes de servicio"].
 

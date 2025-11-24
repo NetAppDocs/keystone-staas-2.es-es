@@ -40,7 +40,7 @@ Durante la vigencia de una suscripción, puedes cambiar las capacidades comprome
 
 * La capacidad comprometida puede reducirse en función de determinadas condiciones.  Para obtener más información, consultelink:../concepts/capacity-requirements.html["Reducción de capacidad"] .
 * La capacidad comprometida no se puede aumentar 90 días antes del vencimiento de su suscripción, a menos que la suscripción se renueve por un período adicional de 12 meses.
-* Puede solicitar cambios en la capacidad comprometida a través de la consola o desde su Keystone Success Manager (KSM). Para obtener información sobre cómo solicitar cambios, consultelink:../concepts/gssc.html["Soporte de NetApp Keystone"] .
+* Puede solicitar cambios en la capacidad comprometida a través de la Consola o desde su Keystone Success Manager (KSM). Para obtener información sobre cómo solicitar cambios, consulte link:../concepts/support-services.html["Soporte de NetApp Keystone"].
 
 
 

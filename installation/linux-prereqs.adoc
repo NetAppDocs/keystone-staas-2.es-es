@@ -23,6 +23,7 @@ Asegúrese de que su servidor Linux y la máquina virtual Keystone Collector ten
 +
 ** Debian 12
 ** Red Hat Enterprise Linux 8.6 o versiones posteriores 8.x
+** Red Hat Enterprise Linux 9.0 o versiones posteriores
 ** CentOS 7 (solo para entornos existentes)
 
 
