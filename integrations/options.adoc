@@ -57,4 +57,4 @@ image:alert-aiq-3.png["alerta"]
 
 Para obtener información sobre las políticas de AQoS, consultelink:../concepts/qos.html["QoS adaptativo"] .
 
-Comuníquese con el soporte de NetApp Keystone para obtener más información sobre estos mensajes.  Para obtener información sobre cómo generar solicitudes de servicio, consultelink:../concepts/gssc.html#generating-service-requests["Generación de solicitudes de servicio"] .
+Comuníquese con el soporte de NetApp Keystone para obtener más información sobre estos mensajes. Para obtener información sobre cómo generar solicitudes de servicio, consulte link:../concepts/support-services.html#generating-service-requests["Generación de solicitudes de servicio"].
