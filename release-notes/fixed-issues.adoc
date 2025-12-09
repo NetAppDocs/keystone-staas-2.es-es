@@ -22,6 +22,15 @@ Los problemas que se encontraron en versiones anteriores de los servicios NetApp
 
 
  a| 
+Las suscripciones muestran incorrectamente el estado *Por encima del límite de ráfaga* en el panel de control del Digital Advisor a pesar de que el consumo está dentro de los límites de ráfaga permitidos.
+ a| 
+Fijado
+ a| 
+8 de diciembre de 2025
+
+
+
+ a| 
 Falta la línea de umbral de ráfaga en los gráficos de tendencias de consumo para las suscripciones configuradas con una configuración MetroCluster en el panel de Digital Advisor , lo que muestra un estado incorrecto de *Por encima del límite de ráfaga*.
  a| 
 Fijado
