@@ -4,7 +4,7 @@ permalink: concepts/data-tiering.html
 keywords: add-on services, add-on, data tiering 
 summary: El servicio complementario de niveles de datos identifica los datos utilizados con menos frecuencia y los clasifica en niveles de almacenamiento compatibles. 
 ---
-= Obtenga más información sobre la clasificación de datos
+= Servicio complementario de niveles de datos para Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
