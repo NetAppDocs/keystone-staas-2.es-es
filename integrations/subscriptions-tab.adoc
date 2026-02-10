@@ -34,7 +34,7 @@ Verá las métricas clave, como el uso de la capacidad, el estado de vencimiento
 Puedes ver los siguientes detalles en la tabla:
 
 +
-** *Número de suscripción*: el número de suscripción de Keystone asignado por NetApp.
+** *Número de suscripción*: el número de suscripción de Keystone asignado por NetApp. Las suscripciones con el icono image:metrocluster-icon.png["MetroCluster símbolo de suscripción"] son suscripciones MetroCluster. Para saber más sobre las suscripciones MetroCluster, consulta link:../integrations/adp-tab.html["Consulta el consumo y la salud de tus suscripciones Keystone MetroCluster"].
 ** *ID de seguimiento*: el ID de seguimiento asignado en el momento de la activación de la suscripción.  Se trata de una identificación única para cada suscripción y sitio, que se utiliza para realizar el seguimiento de la suscripción.
 ** *Nombre del cliente*: el nombre del cliente asociado a la suscripción de Keystone .
 ** *Suscripciones vinculadas*: si tiene alguna suscripción secundaria vinculada a su suscripción principal, esta columna enumera los números de suscripción vinculada para la suscripción principal.  Este número de suscripción puede ser de su suscripción principal o secundaria (vinculada).
@@ -78,7 +78,7 @@ Para ciertos campos y columnas, es posible que vea información o íconos de adv
 ** *ID de seguimiento*: el ID de seguimiento asignado en el momento de la activación de la suscripción.  Esta es una identificación única para cada suscripción y sitio.
 +
 
-TIP: Si se ha suscrito al servicio complementario de protección de datos avanzada, puede hacer clic en la información sobre herramientas junto a su número de suscripción para ver el ID de seguimiento de la suscripción del socio en una configuración de MetroCluster .  Para ver el consumo detallado por suscripciones de socios en una configuración de MetroCluster , consultelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Cuadros de referencia para la protección avanzada de datos"] .
+TIP: Si te has suscrito al servicio complementario de protección de datos avanzada, entonces puedes hacer clic en la información sobre herramientas junto a tu número de suscripción para ver el ID de seguimiento de la suscripción del partner en una configuración de MetroCluster. Para ver el consumo detallado por suscripciones de partner en una configuración de MetroCluster, consulta link:../integrations/adp-tab.html["Ver el consumo y el estado de las suscripciones de MetroCluster"].
 
 ** *Tipo de uso*: Es posible que te hayas suscrito a varias versiones de Keystone .  Las reglas del plan de tarifas para los niveles de servicio de rendimiento pueden diferir entre las versiones de suscripción.  Al observar el valor en esta columna, sabrá si el tipo de uso se factura según el uso aprovisionado, físico o lógico.  Para obtener más información sobre la versión 1, consulte https://docs.netapp.com/us-en/keystone/index.html["Servicios de suscripción de Keystone | Documentación de la versión 1"^] .
 ** *Período de facturación*: El período de facturación de la suscripción.

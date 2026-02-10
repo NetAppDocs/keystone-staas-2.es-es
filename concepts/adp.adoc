@@ -14,16 +14,11 @@ summary: Utilice el servicio complementario de protección de datos avanzada par
 
 
 [role="lead"]
-Puede suscribirse al servicio complementario de protección de datos avanzada con su suscripción a Keystone STaaS.  Este servicio complementario utiliza la tecnología NetApp MetroCluster para garantizar una protección de datos eficiente de sus cargas de trabajo de misión crítica con un objetivo de punto de recuperación (RPO) de 0.
+Puedes suscribirte al servicio complementario de protección avanzada de datos (ADP) con tu suscripción a Keystone STaaS. Mientras que los servicios estándar de Keystone incluyen protección de datos predeterminada usando SnapMirror, SnapVault y Snapshot, este servicio complementario usa la tecnología NetApp MetroCluster para asegurar una protección de datos eficiente de tus cargas de trabajo de misión crítica con un objetivo de punto de recuperación (RPO) de 0.
 
+El servicio avanzado de protección de datos de Keystone puede reflejar datos de forma sincrónica en un sitio secundario. En caso de un desastre en el sitio primario, el sitio secundario puede tomar el control sin ninguna pérdida de datos. Esta función usa la configuración link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"^] entre dos sitios para habilitar la protección de datos. Puedes usar los servicios complementarios avanzados de protección de datos solo para tus servicios de almacenamiento de archivos y bloques. Como parte de este servicio complementario, el nivel de servicio de rendimiento `Advanced Data-Protect` se asigna a tu suscripción.
 
-NOTE: Los servicios estándar de Keystone STaaS para almacenamiento de archivos y bloques ofrecen servicios de protección de datos predeterminados mediante el uso de tecnologías de NetApp , como SnapMirror, SnapVault y Snapshot.
-
-Para obtener información sobre el servicio estándar y en la nube, consultelink:../concepts/supported-storage-services.html["Servicios STaaS de Keystone"] .
-
-El servicio de protección de datos avanzado de Keystone puede reflejar datos de forma sincrónica en un sitio secundario.  En caso de un desastre en el sitio principal, el sitio secundario puede tomar el control, sin ninguna pérdida de datos.  Esta función aprovecha lalink:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"] Configuración entre dos sitios para habilitar la protección de datos.  Puede utilizar los servicios complementarios de protección de datos avanzada únicamente para sus servicios de almacenamiento de archivos y bloques.  Como parte de este servicio complementario, el `Advanced Data-Protect` El nivel de servicio de rendimiento se asigna a su suscripción.
-
-Para obtener información sobre cómo ver el consumo en una configuración de MetroCluster , consultelink:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Cuadros de referencia para la protección avanzada de datos"] .
+Puedes monitorear el consumo y las métricas de salud de tu configuración de MetroCluster. Para más información, consulta link:../integrations/adp-tab.html["Ver el consumo y la salud de tus suscripciones de MetroCluster"].
 
 
 
@@ -31,7 +26,7 @@ Para obtener información sobre cómo ver el consumo en una configuración de Me
 
 El servicio complementario de protección de datos avanzada tiene un precio basado en la capacidad comprometida en cada sitio.  Esto ayuda a determinar el costo real del servicio de protección de datos avanzado en $/TiB. Los cargos adicionales se aplican a todas las capacidades de su suscripción, incluidos los datos de origen, las copias duplicadas y los datos no duplicados.
 
-Para la configuración de MetroCluster , cada sitio requiere su propia suscripción y se le cobra por la capacidad comprometida en cada sitio de forma independiente.  Para obtener más información sobre la facturación, consultelink:../concepts/misc-volume-billing.html#billing-for-advanced-data-protection["Facturación para protección avanzada de datos"] .
+Para la configuración de MetroCluster, cada sitio requiere su propia suscripción y te cobran por la capacidad comprometida en cada sitio de forma independiente.
 
 Tenga en cuenta lo siguiente:
 
@@ -40,6 +35,38 @@ Tenga en cuenta lo siguiente:
 * Los cargos se aplican únicamente a sus servicios de almacenamiento de archivos y bloques.
 
 
-Se admiten los siguientes escenarios de MetroCluster :
 
-image:mcc-1.png["Configuraciones de MetroCluster compatibles con Keystone"]
+
+== Configuraciones compatibles de MetroCluster
+
+Keystone es compatible con los siguientes escenarios de implementación de MetroCluster:
+
+Configuración activa/pasiva:: En esta configuración, los datos primarios de un sitio se reflejan en un sitio secundario. Por ejemplo, si se consumen 100 TiB de datos lógicos en el sitio A, se replican en el sitio B. Ambos sitios requieren suscripciones idénticas:
++
+--
+* *Suscripción 1 (sitio A):* 100 TiB storage service + 100 TiB ADP
+* *Suscripción 2 (sitio B):* 100 TiB storage service + 100 TiB ADP
+
+
+--
+Configuración activa/activa con reflejo completo:: En esta configuración, ambos sitios alojan datos primarios que se reflejan bidireccionalmente. Por ejemplo, 100 TiB de datos primarios en el sitio A se reflejan en el sitio B, y 100 TiB de datos primarios en el sitio B se reflejan en el sitio A. Ambos sitios requieren suscripciones para la capacidad combinada:
++
+--
+* *Suscripción 1 (sitio A):* 200 TiB storage service + 200 TiB ADP
+* *Suscripción 2 (sitio B):* 200 TiB storage service + 200 TiB ADP
+
+
+--
+Configuración activa/activa con reflejo parcial:: En esta configuración, un sitio aloja datos reflejados mientras que el otro sitio aloja tanto datos reflejados como no reflejados. Por ejemplo, 100 TiB de datos primarios en el sitio A se reflejan en el sitio B, mientras que el sitio B también aloja 100 TiB adicionales de datos no reflejados. Las suscripciones difieren según la capacidad en cada sitio:
++
+--
+* *Suscripción 1 (sitio A):* 100 TiB storage service + 100 TiB ADP
+* *Suscripción 2 (sitio B):* 200 TiB storage service + 200 TiB ADP
+
+
+--
+
+
+El siguiente diagrama muestra estas configuraciones compatibles con MetroCluster:
+
+image:mcc-1.png["Diagrama que muestra tres configuraciones de MetroCluster: activo/pasivo con reflejo simétrico, activo/activo con reflejo bidireccional completo y activo/activo con reflejo parcial"]
