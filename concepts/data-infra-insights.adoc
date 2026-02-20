@@ -18,11 +18,13 @@ NetApp Data Infrastructure Insights (DII, anteriormente conocido como Cloud Insi
 
 Para obtener más información sobre Data Infrastructure Insights, consultelink:https://docs.netapp.com/us-en/data-infrastructure-insights/["Documentación de Data Infrastructure Insights"^] .
 
-DII está disponible tanto para suscripciones nuevas como existentes.  Se puede integrar en una suscripción de Keystone como complemento de la capacidad comprometida.  Cuando DII se integra en una suscripción de Keystone , tendrá un nivel de servicio de rendimiento correspondiente para cada nivel de servicio de rendimiento base en la suscripción.  Por ejemplo, Extreme se asigna a DII Extreme, Premium se asigna a DII Premium y Performance se asigna a DII Performance.  Estas asignaciones garantizan que el nivel de servicio de rendimiento de DII se alinee con el nivel de servicio de rendimiento base de su suscripción de Keystone .
 
-Una vista de los niveles de servicio de rendimiento de DII dentro de un widget *Suscripciones Keystone * en el panel de Digital Advisor :
 
-image:keystone-widget-dii.png["Captura de pantalla del widget Suscripciones de Keystone que muestra los niveles de servicio de DII"]
+== Acerca de DII para suscripciones de Keystone
+
+DII está disponible tanto para suscripciones nuevas como para suscripciones existentes. Puede integrarse en una suscripción Keystone como un complemento para la capacidad comprometida.
+
+Cuando DII se integra en una suscripción Keystone, tendrá un nivel de servicio de rendimiento correspondiente para cada nivel de servicio de rendimiento básico en la suscripción. Por ejemplo, Extreme se asigna a DII Extreme, Premium se asigna a DII Premium y Performance se asigna a DII Performance. Estas asignaciones aseguran que el nivel de servicio de rendimiento de DII esté alineado con el nivel de servicio de rendimiento básico de tu suscripción Keystone.
 
 
 
@@ -60,14 +62,31 @@ NOTE: Si bien DII ofrece amplias capacidades de monitoreo para el hardware imple
 
 
 
+== Ver consumo de DII
+
+Puedes ver el consumo de tus servicios adicionales de DII a través de la NetApp Console o Digital Advisor. Los datos de consumo de los niveles de servicio de rendimiento de DII (como DII Extreme, DII Premium y DII Performance) aparecen junto a tus niveles de servicio de rendimiento base en las vistas de consumo actual y tendencia de consumo.
+
+El siguiente ejemplo muestra el nivel de servicio de rendimiento de DII en la pestaña *Consumo actual* en la Console:
+
+image:console-current-consumption-dii.png["Captura de pantalla de la pestaña de consumo actual que muestra los niveles de servicio DII"]
+
+El siguiente ejemplo muestra los niveles de servicio de rendimiento de DII en el widget *Keystone Subscriptions* en Digital Advisor:
+
+image:keystone-widget-dii.png["Captura de pantalla del widget Keystone Subscriptions que muestra los niveles de servicio de DII"]
+
+Para más información sobre cómo ver el consumo, consulta:
+
+* link:../integrations/current-usage-tab.html["Ver el consumo actual de sus suscripciones de Keystone"]
+* link:../integrations/consumption-tab.html["Vea las tendencias de consumo de sus suscripciones a Keystone"]
+
+
+
+
 == Facturación y medición
 
 A continuación se describen los detalles de facturación y medición del servicio complementario DII:
 
 * Este servicio se mide de la misma manera que su suscripción principal.  Por ejemplo, si su suscripción principal incluye 100 TiB de servicio Extreme y 100 TiB de servicio Premium, ambos medidos sobre una base de uso lógico, los servicios complementarios, DII Extreme 100 TiB y DII Premium 100 TiB, también se miden sobre una base de uso lógico.  Si su suscripción principal se mide en función del aprovisionamiento, el servicio complementario se mide de la misma manera para la misma capacidad.  El servicio complementario seguirá el mismo método de medición que su suscripción principal.
-+
-image:current-consumption-dii.png["Captura de pantalla de la pestaña de consumo actual que muestra la medición de los niveles de servicio"]
-
 * Este servicio se mide y se factura junto con su suscripción a Keystone en la misma factura.  Si configura DII para Keystone antes de activar su suscripción a Keystone , la facturación comenzará a partir de la fecha de activación de la suscripción a Keystone o de la fecha de modificación de las suscripciones existentes.
 * Este servicio se mide y factura en función de la capacidad comprometida y el uso en ráfagas para los niveles de servicio de rendimiento de DII, además de la factura estándar de Keystone .  La medición de este servicio complementario sigue la misma metodología que el nivel de rendimiento del servicio de suscripción subyacente de Keystone , que puede ser lógico, aprovisionado o físico.
 * Este servicio finaliza con la suscripción de Keystone a la que está vinculado.  Al renovar, usted podrá elegir si desea renovar el servicio complementario.  Si no renueva la suscripción a Keystone , el hardware monitoreado se da de baja y el servicio complementario finaliza automáticamente.
