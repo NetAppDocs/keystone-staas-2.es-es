@@ -66,7 +66,7 @@ También puede ver un resumen del consumo actual junto con el consumo histórico
 
 NOTE: Puede seleccionar *Ráfaga acumulada facturada* si desea ver los datos históricos de uso de ráfaga para los que se han generado facturas.  Puede utilizar estos datos para analizar el uso facturado reflejado en su factura.  Para obtener más información, consultelink:../integrations/consumption-tab.html#view-accrued-burst["Ver ráfaga acumulada"] .
 
-. Seleccione el rango de tiempo de los íconos del calendario en los campos *Desde fecha* y *Hasta fecha*.  Seleccione el rango de fechas para la consulta.  El rango de fechas puede ser desde el comienzo del mes o la fecha de inicio de la suscripción hasta la fecha actual o la fecha de finalización de la suscripción.  No puedes seleccionar una fecha futura.
+. Selecciona el intervalo de tiempo desde los iconos de calendario en los campos *From Date* y *To Date*. Por defecto, el intervalo de fechas es de los últimos 30 días desde hoy. Puedes cambiar este intervalo, pero no puedes seleccionar una fecha futura.
 +
 
 TIP: Para obtener un rendimiento y una experiencia de usuario óptimos, limite el rango de fechas de su consulta a tres meses.
@@ -74,6 +74,10 @@ TIP: Para obtener un rendimiento y una experiencia de usuario óptimos, limite e
 . Haga clic en *Ver detalles*.  Los datos históricos de consumo de la suscripción para cada nivel de servicio de rendimiento se muestran en función del rango de tiempo seleccionado.
 +
 Los gráficos de barras muestran el nombre del nivel de servicio de rendimiento y la capacidad consumida en relación con ese nivel de servicio de rendimiento para el rango de fechas.  La fecha y la hora de la recolección se muestran en la parte inferior del gráfico.  Según el rango de fechas de su consulta, los gráficos de uso se muestran en un rango de 30 puntos de recopilación de datos.  Puede pasar el cursor del mouse sobre los gráficos para ver el desglose del uso en términos de datos comprometidos, consumidos, en ráfagas y por encima del límite de ráfagas en ese punto de recopilación de datos.
+
++
+
+NOTE: Si seleccionas un intervalo de fechas de menos de 30 días, el gráfico muestra un punto de recopilación de datos por día solo para los días seleccionados. Por ejemplo, un intervalo de 4 días muestra 4 puntos de recopilación de datos, no 30. Solo se muestra la fecha en la parte inferior del gráfico para cualquier intervalo seleccionado. Las marcas de tiempo son visibles solo cuando haces zoom en el gráfico usando la función de acercar que se describe abajo.
 
 +
 Los gráficos de barras muestran ráfagas de corto plazo, y puedes verlas utilizando la función de zoom.  Cuando se produce una ráfaga de corto plazo, se indica mediante un punto azul en la barra correspondiente o directamente en el eje x si no se consumen datos.  Para ver los detalles, haga clic y mantenga presionada la barra o el eje x donde aparece el punto azul, luego arrastre el cursor por el gráfico para seleccionar el intervalo de tiempo deseado y suelte para confirmar su selección.  Esta acción amplía los datos y proporciona una vista más granular de la capacidad utilizada en ese nivel de servicio de rendimiento para el intervalo seleccionado.  Puede hacer clic en el botón *Restablecer zoom* para volver a la vista del gráfico original.
