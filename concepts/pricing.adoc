@@ -4,35 +4,102 @@ permalink: concepts/pricing.html
 keywords: pricing, billing introduction, Keystone billing 
 summary: Keystone ofrece un modelo de pago según su crecimiento para sus necesidades de consumo flexibles y escalables. 
 ---
-= Obtenga más información sobre los precios de Keystone
-:hardbreaks:
+= Conoce la facturación de Keystone
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ../media/
 
+
+'''
+sidebar: sidebar permalink: concepts/pricing.html keywords: fijación de precios, facturación Keystone, capacidad comprometida, capacidad consumida, consumo en ráfagas, calendarios de facturación summary: Con NetApp Keystone STaaS, pagas por lo que te comprometes y solo pagas un extra por lo que usas más allá de eso. Esta página explica cómo funciona el modelo de pago por crecimiento — desde cómo se fija el precio de tu compromiso de almacenamiento, hasta cómo se mide y factura la capacidad, y cuándo se generan las facturas. ---
+
+
+
+= Conoce la facturación de Keystone
 
 [role="lead"]
-El servicio de suscripción de pago por uso NetApp Keystone STaaS ofrece un consumo flexible y escalable con precios predecibles y por adelantado para sus necesidades de almacenamiento.
+Con NetApp Keystone STaaS, pagas por lo que te comprometes y solo pagas un extra por lo que utilizas más allá de eso. Esta página explica cómo funciona el modelo de pago por uso, incluyendo cómo se fija el precio de tu compromiso de almacenamiento, cómo se mide y factura la capacidad y cuándo se generan las facturas.
+
+
+
+== Modelo de precios Keystone
+
+Tu suscripción a Keystone te da costes predecibles con la flexibilidad de escalar cuando las cargas de trabajo lo requieran. Los cargos de Keystone se basan en el nivel de servicio de rendimiento que elijas y en la capacidad a la que te comprometas.
 
 Keystone le ofrece las siguientes facilidades de facturación:
 
-* Puede pagar en función de la capacidad comprometida de IOPS y latencia para satisfacer diversas necesidades de carga de trabajo. Los diferentes niveles de servicio de rendimiento (Extreme, Premium, Performance, Standard, Value y Object) le permiten administrar su almacenamiento en función del nivel de servicio de rendimiento adquirido.
+* Puedes pagar en función de la capacidad comprometida de IOPS y latencia para satisfacer las distintas necesidades de carga de trabajo. Los distintos niveles de servicio de rendimiento - Extreme, Premium, Standard, Value, Object y Cloud Volumes ONTAP - te permiten gestionar tu almacenamiento según el nivel de servicio de rendimiento que hayas adquirido.
 * Presenta una facturación predecible para la capacidad comprometida y un pago por uso para el uso de la capacidad variable (ráfaga).
-* Puede seleccionar un precio de paquete para hardware, sistema operativo central y soporte por un precio de $/TiB.  Tienes una única factura para cada tipo de almacenamiento, archivo, bloque, objeto o servicio de almacenamiento en la nube.
-* Puede seleccionar un plazo flexible para los servicios y opciones de pago, como mensual, trimestral o anual.
+* Puedes seleccionar un precio de paquete para el hardware, el sistema operativo principal y el soporte por un solo precio de $/TiB. Tienes una sola factura para cada tipo de almacenamiento: unificado, en bloque, optimizado, de objetos o servicios de almacenamiento en la nube.
+* Puedes elegir un plazo flexible para los servicios y las opciones de pago, como mensual, trimestral, semestral o anual.
 
 
 La facturación de Keystone se basa en la capacidad comprometida y el consumo en ráfagas variables.
 
-Para obtener información sobre las diferentes capacidades admitidas en Keystone, consultelink:../concepts/supported-storage-capacity.html["Capacidades de almacenamiento admitidas en Keystone"] .
+Para obtener información sobre las distintas capacidades admitidas en Keystone, consulta link:../concepts/supported-storage-capacity.html["Tipos de capacidad de almacenamiento en Keystone"].
 
-*Información relacionada*
 
-* link:../concepts/committed-capacity-billing.html["Facturación basada en capacidad comprometida"]
-* link:../concepts/consumed-capacity-billing.html["Medición basada en la capacidad consumida"]
-* link:../concepts/burst-consumption-billing.html["Facturación basada en consumo explosivo"]
-* link:../concepts/misc-volume-billing.html["Facturación basada en diversos tipos de volumen"]
-* link:../concepts/billing-schedules.html["Horarios de facturación"]
+
+== Cómo mide Keystone la capacidad
+
+Keystone utiliza tres conceptos de capacidad para calcular tu factura. Conocer cada uno te ayuda a evitar cargos inesperados.
+
+
+
+=== Capacidad comprometida
+
+La capacidad comprometida es la capacidad que aceptas adquirir para un nivel de servicio de rendimiento específico cuando firmas tu suscripción a Keystone. Esta cantidad se fija en tu pedido de Keystone y se factura en su totalidad en cada periodo de facturación, independientemente de cuánta capacidad utilicen realmente tus cargas de trabajo.
+
+Por ejemplo, si te comprometes a 100 TiB en el nivel de servicio Premium, se te facturarán 100 TiB aunque el uso real ese mes sea de 80 TiB.
+
+La capacidad comprometida puede abarcar varios niveles de servicio de rendimiento dentro de una única suscripción, según lo acordado entre tú y NetApp o tu socio.
+
+Para ver tu capacidad comprometida y hacer un seguimiento del uso real, consulta link:../integrations/current-usage-tab.html["Ver detalles de su consumo actual"].
+
+
+
+=== Capacidad consumida
+
+La capacidad consumida es la capacidad que tus cargas de trabajo realmente usan en cualquier momento. Keystone supervisa y mide continuamente tu consumo durante todo el periodo de facturación. Al menos una vez cada cinco minutos, se genera un registro de consumo que captura la capacidad consumida actual para tu suscripción. Estos registros se agregan durante el periodo de facturación para generar facturas e informes de uso.
+
+El intervalo de control de cinco minutos garantiza un seguimiento granular, de modo que el consumo en ráfagas se detecta y se factura con precisión, no de forma estimada al final del periodo.
+
+Cuando la capacidad consumida se mantiene igual o por debajo de tu capacidad comprometida, solo se aplica la tarifa de capacidad comprometida. Cuando la capacidad consumida supera tu capacidad comprometida, se aplica la facturación por ráfagas.
+
+
+
+=== Consumo en ráfagas
+
+El consumo de ráfagas es la capacidad que usas por encima de tu capacidad comprometida. Tu límite de ráfagas se determina y especifica en tu acuerdo de Keystone. Se establece en un 20% por encima de la capacidad comprometida.
+
+Por ejemplo, si tu capacidad comprometida es de 100 TiB y usas 115 TiB, los 15 TiB extra se cobran a la tarifa de ráfaga.
+
+Cuando la capacidad consumida es superior a la capacidad comprometida para un nivel de servicio de rendimiento, se registra el consumo de ráfagas y se cobra en consecuencia. El uso por encima del límite de capacidad de ráfagas se marca como "Por encima del límite de ráfagas".
+
+El consumo en ráfagas se calcula para cada registro de consumo generado a lo largo del periodo de facturación. Refleja tanto la cantidad como la duración de tu capacidad consumida en exceso además de tu capacidad comprometida. Para ver las tendencias de consumo en ráfagas para tu suscripción, consulta link:../integrations/consumption-tab.html["Vea las tendencias de consumo de sus suscripciones a Keystone"].
+
+
+
+== Horarios de facturación
+
+La frecuencia de facturación se establece en tu contrato Keystone. La siguiente tabla muestra cuándo puedes esperar las facturas por capacidad comprometida y uso de ráfagas en cada opción.
+
+[cols="1,2,2"]
+|===
+| Frecuencia de facturación | Factura por capacidad comprometida | Factura por uso de ráfagas 
+
+
+| Mensualmente | Enviado el mes siguiente | Incluido en la misma factura 
+
+
+| Anualmente | Enviado al principio de cada año de suscripción | Enviado al final de cada trimestre 
+|===
+
+NOTE: Para la facturación anual, si tu capacidad comprometida cambia durante una suscripción, se envía una factura el mismo día por los pagos mínimos prorrateados para el resto de ese año de suscripción. La facturación se calcula a partir del día en que se hace efectivo el cambio de capacidad comprometida.
+
+
+
+== Información relacionada
+
+* link:../concepts/supported-storage-capacity.html["Tipos de capacidad de almacenamiento en Keystone"]
+* link:../integrations/current-usage-tab.html["Ver detalles de su consumo actual"]
+* link:../integrations/consumption-tab.html["Vea las tendencias de consumo de sus suscripciones a Keystone"]
 
