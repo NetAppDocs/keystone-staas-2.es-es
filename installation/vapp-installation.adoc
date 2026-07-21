@@ -18,6 +18,7 @@ La implementación de Keystone Collector en sistemas VMware vSphere incluye la d
 
 
 
+[[deploying-the-ova-template]]
 == Implementación de la plantilla OVA
 
 Siga estos pasos:
@@ -59,6 +60,7 @@ Una vez implementada la VM desde la plantilla y encendida, abra una sesión SSH 
 
 
 
+[[initial-system-configuration]]
 == Configuración inicial del sistema
 
 Realice estos pasos en sus sistemas VMware vSphere para una configuración inicial de los servidores Keystone Collector implementados a través de OVA:

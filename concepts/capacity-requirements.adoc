@@ -18,6 +18,7 @@ Los requisitos de capacidad para los niveles de servicio de rendimiento de Keyst
 
 
 
+[[minimum-capacity-requirements-for-file-and-block-services]]
 == Requisitos mínimos de capacidad para servicios de archivos y bloques
 
 La capacidad mínima y la capacidad incremental permitida por suscripción se describen en la siguiente tabla.  La capacidad mínima por nivel de servicio de rendimiento se define como la misma en todos los movimientos de ventas de Keystone .  La capacidad que excede la capacidad mínima, ya sea al inicio de la suscripción, como servicio complementario a la suscripción o después de una reasignación durante la suscripción, también se estructura en la tabla.
@@ -44,6 +45,7 @@ Capacidad incremental (y en múltiplos) permitida como complemento durante la su
 |===
 
 
+[[minimum-capacity-requirements-for-object-storage]]
 == Requisitos mínimos de capacidad para el almacenamiento de objetos
 
 Puede ver los requisitos mínimos de capacidad para el almacenamiento de objetos en la siguiente tabla:
@@ -94,6 +96,7 @@ No aplicable
 |===
 
 
+[[capacity-adjustments]]
 == Ajustes de capacidad
 
 Obtenga más información sobre los ajustes de capacidad:
@@ -107,6 +110,7 @@ Obtenga más información sobre los ajustes de capacidad:
 
 
 
+[[capacity-reduction]]
 === Reducción de capacidad
 
 La reducción de capacidad (anual) se aplica al modelo de pago _Anual por adelantado_ y a las implementaciones solo locales.  No está disponible para servicios en la nube o servicios de nube híbrida.  Proporciona provisión de capacidad local, que se puede reducir hasta en un 25 % por nivel de servicio por suscripción.  Esta reducción se permite una vez al año y se hará efectiva al comienzo del siguiente período de facturación anual.  Los pagos anuales basados en servicios locales deben ser >=$200 000 en cualquier momento durante el plazo para aprovechar la reducción de capacidad.  Debido a que solo es compatible con implementaciones locales, este modelo de facturación no permite reasignar el gasto de los servicios locales a los servicios en la nube.  En la siguiente imagen se ilustra un ejemplo de reducción anual de capacidad.
@@ -115,6 +119,7 @@ image:reallocation.png["explicación de la lógica de reasignación"]
 
 
 
+[[quarterly-spend-reallocation]]
 === Reasignación trimestral del gasto
 
 Keystone STaaS le ofrece la opción de reasignar el gasto de servicios locales al gasto de Cloud Volumes ONTAP .

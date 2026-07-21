@@ -29,6 +29,7 @@ Los niveles de servicio de rendimiento básico para los tipos de almacenamiento 
 
 
 
+[[performance-service-levels-for-file-and-block-storage]]
 == Niveles de servicio de rendimiento para almacenamiento de archivos y bloques
 
 *Protocolos compatibles*: NFS, CIFS, iSCSI y FC
@@ -61,6 +62,7 @@ Los niveles de servicio de rendimiento básico para los tipos de almacenamiento 
 |===
 
 
+[[more-on-performance-service-levels-for-file-and-block-storage]]
 === Más información sobre los niveles de servicio de rendimiento para el almacenamiento de archivos y bloques
 
 Las métricas de nivel de servicio de rendimiento base dependen de las siguientes condiciones:
@@ -84,6 +86,7 @@ Las métricas de nivel de servicio de rendimiento base dependen de las siguiente
 
 
 
+[[object-storage]]
 == Almacenamiento de objetos
 
 *Protocolo compatible*: S3
@@ -113,6 +116,7 @@ NOTE: La latencia no incluye los costos generales asociados con la transferencia
 
 
 
+[[cloud-storage]]
 == almacenamiento en la nube
 
 *Protocolo compatible*: NFS, CIFS, iSCSI y S3 (solo AWS y Azure)

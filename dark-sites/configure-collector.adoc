@@ -66,6 +66,7 @@ image:dark-site-overall-healthy-2.png["Estado del servicio"]
 
 
 
+[[export-usage-report]]
 == Informe de uso de exportación
 
 Debe enviar el informe de resumen de uso mensual a NetApp al final de cada mes.  Puede generar este informe manualmente.
@@ -84,6 +85,7 @@ image:dark-site-clear-file-report-1.png["Informe de archivo claro"]
 
 
 
+[[upgrade-ontap]]
 == Actualizar ONTAP
 
 Keystone Collector admite actualizaciones de ONTAP a través de TUI.
@@ -100,6 +102,7 @@ image:dark-site-start-webserver-1.png["Opción Iniciar servidor web"]
 
 
 
+[[restart-keystone-collector]]
 == Reiniciar Keystone Collector
 
 Puede reiniciar el servicio Keystone Collector a través de la TUI.  Vaya a *Mantenimiento > Reiniciar servicios del recopilador* en la TUI.  Esto reiniciará todos los servicios del recopilador, y su estado se podrá monitorear desde la pantalla de inicio de TUI.

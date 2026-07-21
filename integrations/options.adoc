@@ -18,6 +18,7 @@ Puede buscar y filtrar sus datos, generar informes de suscripciones y uso, y ver
 
 
 
+[[search-and-filter-data-from-netapp-console]]
 == Busque y filtre datos desde la consola de NetApp
 
 En la consola, puede buscar y filtrar datos de Keystone según los parámetros de columna disponibles en la tabla dentro de una pestaña.  Por ejemplo, en la pestaña *Suscripciones* de la página *Suscripciones*, puede filtrar datos ingresando la versión de Keystone en el cuadro de búsqueda.  De manera similar, en la pestaña *Volúmenes en clústeres* debajo de la página *Activos*, puede filtrar volúmenes ingresando el nombre del volumen en el cuadro de búsqueda.
@@ -26,6 +27,7 @@ Puede refinar sus búsquedas utilizando la opción de filtro avanzado cuando est
 
 
 
+[[generate-reports-from-netapp-console-or-digital-advisor]]
 == Genere informes desde la consola de NetApp o Digital Advisor
 
 Puede generar y ver informes de sus datos de Keystone utilizando el botón de descargaimage:bluexp-download-report-2.png["Icono de descarga de informe 2 en la consola"] disponible en pestañas dentro de la Consola o el Digital Advisor. Estas pestañas le permiten generar informes sobre sus suscripciones, uso histórico, uso intensivo, rendimiento, activos, volúmenes y objetos.
@@ -34,6 +36,7 @@ Los detalles se generan en formato CSV que puedes guardar para usarlos y compara
 
 
 
+[[generate-consolidated-report-from-digital-advisor]]
 == Generar informe consolidado de Digital Advisor
 
 En Digital Advisor, puede generar y ver un informe consolidado de sus suscripciones, uso histórico, uso intensivo, rendimiento, activos y volúmenes y objetos.  Para ello, seleccione *Suscripciones Keystone * como tipo de informe en la función Informes de Digital Advisor.  Puede generar estos informes a nivel de cliente, clúster, lista de seguimiento o suscripción.
@@ -46,6 +49,7 @@ Para obtener más información sobre cómo generar informes, consultelink:https:
 
 
 
+[[view-alerts-from-digital-advisor]]
 == Ver alertas de Digital Advisor
 
 En Digital Advisor, el panel de Keystone proporciona notificaciones de alerta que le permiten comprender los problemas que ocurren en su entorno de almacenamiento.  Estas notificaciones pueden aparecer como alertas o advertencias informativas.  Por ejemplo, si hay volúmenes dentro de sus clústeres administrados que no tienen políticas de calidad de servicio adaptativas (AQoS) adjuntas, puede ver un mensaje de advertencia.  Seleccione el mensaje de advertencia para ver la lista de volúmenes no compatibles en la pestaña *Volúmenes y objetos*.

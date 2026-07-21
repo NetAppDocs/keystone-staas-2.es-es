@@ -18,12 +18,14 @@ NetApp garantiza la recuperación de datos Snapshot de los volúmenes SnapLock C
 
 
 
+[[service-levels]]
 == Niveles de servicio
 
 El servicio de garantía de recuperación de ransomware es necesario para todo el hardware que respalde la suscripción de Keystone durante la vigencia del período de suscripción correspondiente.
 
 
 
+[[service-credits]]
 == Créditos de servicio
 
 

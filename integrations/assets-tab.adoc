@@ -18,6 +18,7 @@ Puede ver información detallada sobre los clústeres y nodos de ONTAP y las red
 
 
 
+[[view-keystone-subscription-assets-from-netapp-console]]
 == Ver los activos de suscripción de Keystone desde la consola de NetApp
 
 La pestaña *Activos* en la página *Suscripciones* muestra información detallada sobre los volúmenes en clústeres, nodos StorageGRID y nodos ONTAP asociados con la suscripción, incluidos varios detalles y el estado de la capacidad.
@@ -109,6 +110,7 @@ TIP: Puede personalizar la tabla utilizando el selector de columnasimage:column-
 ====
 
 
+[[view-keystone-subscription-assets-from-digital-advisor]]
 == Ver los activos de suscripción de Keystone desde Digital Advisor
 
 La pestaña *Activos* del panel de Keystone en Digital Advisor incluye dos subpestañas: * ONTAP* y * StorageGRID*.  Esta pestaña acumula información a nivel de clúster para ONTAP e información a nivel de red para StorageGRID en función de sus suscripciones, segregando y presentando los datos con detalles precisos.  Puede ver esta información haciendo clic en las subpestañas correspondientes.

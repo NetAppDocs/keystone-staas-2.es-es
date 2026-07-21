@@ -23,6 +23,7 @@ NOTE: El título de esta pestaña varía según la naturaleza de la implementaci
 
 
 
+[[view-ontap-volumes-and-object-storage-details]]
 == Ver volúmenes de ONTAP y detalles de almacenamiento de objetos
 
 La pestaña *Volúmenes y objetos* ofrece información sobre los volúmenes del sistema ONTAP y el almacenamiento de objetos en diferentes niveles de detalle.  Para los volúmenes de ONTAP , hay dos subpestañas: *Resumen de volumen*, que proporciona un recuento general de los volúmenes asignados a los niveles de servicio de rendimiento suscritos, y *Detalles de volumen*, que enumera nuevamente estos volúmenes con sus detalles específicos.  La subpestaña *Objetos* proporciona detalles sobre el almacenamiento de objetos para suscripciones que incluyen niveles de servicio de rendimiento tanto para el almacenamiento de archivos como de objetos.

@@ -26,6 +26,7 @@ Los servicios Keystone STaaS se pueden utilizar al mismo tiempo.  Por ejemplo, u
 
 
 
+[[services-for-file-block-and-object-storage]]
 == Servicios para almacenamiento de archivos, bloques y objetos
 
 Los servicios Keystone STaaS para almacenamiento de archivos y bloques ONTAP y almacenamiento de objetos StorageGRID admiten múltiples funciones y protocolos, y se describen en la siguiente tabla:
@@ -96,6 +97,7 @@ NOTE: ^1^ Para obtener información sobre la protección contra ransomware en ON
 
 
 
+[[services-for-cloud-storage]]
 == Servicios de almacenamiento en la nube
 
 Keystone STaaS ofrece servicios de almacenamiento en la nube.  Keystone STaaS admite las capacidades de administración de datos de Cloud Volumes ONTAP en Amazon Web Services (AWS), Microsoft Azure y Google Cloud Platform.

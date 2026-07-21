@@ -22,6 +22,7 @@ Puedes monitorear el consumo y las métricas de salud de tu configuración de Me
 
 
 
+[[understand-pricing]]
 == Entender los precios
 
 El servicio complementario de protección de datos avanzada tiene un precio basado en la capacidad comprometida en cada sitio.  Esto ayuda a determinar el costo real del servicio de protección de datos avanzado en $/TiB. Los cargos adicionales se aplican a todas las capacidades de su suscripción, incluidos los datos de origen, las copias duplicadas y los datos no duplicados.
@@ -37,6 +38,7 @@ Tenga en cuenta lo siguiente:
 
 
 
+[[supported-metrocluster-configurations]]
 == Configuraciones compatibles de MetroCluster
 
 Keystone es compatible con los siguientes escenarios de implementación de MetroCluster:

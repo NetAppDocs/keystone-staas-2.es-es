@@ -18,6 +18,7 @@ NetApp Keystone ofrece una medición garantizada de la cantidad máxima de vatio
 
 
 
+[[metrics]]
 == Métrica
 
 * *Vatios*: El consumo de energía informado por AutoSupport diario, incluido el uso del controlador y los estantes de discos conectados.
@@ -34,6 +35,7 @@ Para obtener más información sobre la relación de eficiencia de almacenamient
 
 
 
+[[performance-service-levels]]
 == Niveles de servicio de rendimiento
 
 La sostenibilidad SLO se basa en los siguientes criterios de consumo:
@@ -62,6 +64,7 @@ Para obtener más información, consultelink:https://docs.netapp.com/us-en/keyst
 
 
 
+[[service-credits]]
 == Créditos de servicio
 
 
@@ -95,6 +98,7 @@ Si el consumo de W/TiB durante un período de facturación no cumple con los cri
 |===
 
 
+[[service-credit-request]]
 === Solicitud de crédito de servicio
 
 Si se detecta un incumplimiento del SLA, abra un ticket de soporte de prioridad 3 (P3) con el soporte de NetApp Keystone y proporcione los detalles solicitados en la hoja de Excel, como se muestra a continuación:

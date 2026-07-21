@@ -18,6 +18,7 @@ NetApp Keystone ofrece SLO basado en latencia por nivel de servicio de rendimien
 
 
 
+[[metrics]]
 == Métrica
 
 * *Rendimiento degradado*: la cantidad de tiempo, en minutos, por incidente, durante el cual no se cumple el objetivo de latencia del percentil 90.
@@ -39,6 +40,7 @@ NetApp Keystone ofrece SLO basado en latencia por nivel de servicio de rendimien
 
 
 
+[[performance-service-levels]]
 == Niveles de servicio de rendimiento
 
 Todos los niveles de servicio de rendimiento que admiten las matrices de almacenamiento flash ONTAP son elegibles para el SLO de rendimiento y garantizan el cumplimiento de la siguiente latencia objetivo:
@@ -57,6 +59,7 @@ Para obtener más información sobre los requisitos de latencia de los niveles d
 
 
 
+[[service-credits]]
 == Créditos de servicio
 
 
@@ -76,6 +79,7 @@ Latencia del percentil 90 > latencia objetivo
 |===
 
 
+[[service-credit-calculation]]
 === Cálculo del crédito por servicio
 
 Los créditos por servicio se determinan utilizando la siguiente fórmula:
@@ -111,6 +115,7 @@ Según el cálculo, los créditos por servicio serán de $12.
 
 
 
+[[service-credit-request]]
 === Solicitud de crédito de servicio
 
 Si se detecta un incumplimiento del SLA, abra un ticket de soporte de prioridad 3 (P3) con el soporte de NetApp Keystone .

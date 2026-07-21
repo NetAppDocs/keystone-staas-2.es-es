@@ -18,6 +18,7 @@ El objetivo de SLO de disponibilidad es un tiempo de actividad del 99,999 % dura
 
 
 
+[[metrics]]
 == Métrica
 
 * *Porcentaje de tiempo de actividad mensual* = [(número de segundos elegibles en un mes - promedio de la cantidad de segundos de inactividad para todas las matrices de almacenamiento AFF implementadas para entregar el pedido de Keystone en ese mes) / número de segundos elegibles en un mes] x 100 %
@@ -27,12 +28,14 @@ El objetivo de SLO de disponibilidad es un tiempo de actividad del 99,999 % dura
 
 
 
+[[performance-service-levels]]
 == Niveles de servicio de rendimiento
 
 Todos los niveles de servicio de rendimiento que admiten las matrices de almacenamiento flash ONTAP son elegibles para el SLO de disponibilidad.  Para obtener más información, consultelink:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Niveles de servicio de rendimiento en Keystone"] .
 
 
 
+[[service-credits]]
 == Créditos de servicio
 
 
@@ -73,6 +76,7 @@ Si la disponibilidad de las matrices de almacenamiento flash ONTAP para las susc
 |===
 
 
+[[service-credit-calculation]]
 === Cálculo del crédito por servicio
 
 Los créditos por servicio se determinan utilizando la siguiente fórmula:
@@ -125,6 +129,7 @@ Según el cálculo, los créditos por servicio serán de $5.
 
 
 
+[[service-credit-request]]
 === Solicitud de crédito de servicio
 
 Si se detecta un incumplimiento del SLA, abra un ticket de soporte de prioridad 3 (P3) con el soporte de NetApp Keystone .
