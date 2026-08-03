@@ -32,8 +32,16 @@ image:monitoring-alert-monitors-default-view-1.png["Una captura de pantalla de l
 Puedes ver una lista de los monitores de alerta en todas tus suscripciones a Keystone, incluidos los nombres de los monitores, las condiciones de los monitores que activan las notificaciones, los niveles de gravedad, los números de suscripción, los niveles de servicio de rendimiento y el estado. Puedes revisar la columna *Created by* para ver si los monitores de alerta son generados por el sistema o definidos por el usuario.
 
 +
+Keystone crea automáticamente monitores generados por el sistema para todas tus suscripciones. Estos monitores no se pueden eliminar. La edición se limita a modificar los números de suscripción y los niveles de servicio de rendimiento para los monitores de uso de la capacidad, y a modificar los números de suscripción para los monitores de vencimiento de suscripciones.
+
++
+** *Monitor de caducidad de la suscripción*: Las alertas se activan en cinco umbrales antes de la fecha de caducidad de la suscripción (180, 90, 60, 30 y 7 días). La gravedad aumenta de informativa a crítica a medida que se acerca la fecha de caducidad.
+** *Monitor de uso de la capacidad*: Las alertas se basan en el porcentaje de picos garantizados de tu suscripción en lugar de en un valor fijo. Por ejemplo, si tu porcentaje de picos garantizados es del 40%, la alerta crítica se activa cuando el uso de la capacidad alcanza el 140% de la capacidad garantizada.
++
 
 NOTE: La pestaña *Informes* actualmente no está disponible para las suscripciones de Keystone .
+
+
 
 
 
