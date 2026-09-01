@@ -4,7 +4,7 @@ permalink: installation/monitor-health.html
 keywords: monitoring system health 
 summary: Para garantizar que los datos estén disponibles, puede supervisar el estado del recopilador Keystone mediante cualquier sistema de supervisión que admita solicitudes HTTP. 
 ---
-= Supervisar la salud de Keystone Collector
+= Supervisión del estado de Keystone Collector
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: dark-sites/overview.html
 keywords: keystone, dark, site, staas, security, deployment, collector, encryption, access 
 summary: Keystone ofrece un modo de implementación _privado_, también conocido como _sitio oscuro_, para satisfacer sus requisitos comerciales y de seguridad. 
 ---
-= Conozca Keystone (modo privado)
+= Descubre Keystone en modo privado
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

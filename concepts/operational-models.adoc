@@ -80,4 +80,4 @@ Soporte
 
 | image:check.png["marca de verificación"] | Ninguno 
 |===
-Para obtener más información sobre la implementación, consultelink:../concepts/infra.html["Infraestructura Keystone"] ylink:..//concepts/components.html["Componentes para la implementación"] .
+Para obtener más información sobre la implementación, consulta link:../concepts/infra.html["Conoce la infraestructura de Keystone"] y link:..//concepts/components.html["Componentes necesarios para los servicios de Keystone"].
