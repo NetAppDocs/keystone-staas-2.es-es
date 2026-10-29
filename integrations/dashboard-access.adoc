@@ -14,7 +14,7 @@ summary: Como suscriptor de NetApp Keystone STaaS, puede obtener acceso al panel
 
 
 [role="lead"]
-Puede acceder al panel de Keystone a través de la consola de NetApp o Digital Advisor después de suscribirse a los servicios de NetApp Keystone .
+Puedes acceder al dashboard de Keystone de tu suscripción a Keystone STaaS a través de NetApp Console o Digital Advisor.
 
 [role="tabbed-block"]
 ====
